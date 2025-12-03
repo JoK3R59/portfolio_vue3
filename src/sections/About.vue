@@ -1,15 +1,15 @@
-<script lang="ts"></script>
+<script setup lang="ts">
+  import BorderContent from '../component/border_content.vue';
+</script>
 
 <template>
   <section class="about-section">
     <h2>About Section</h2>
     <p>This is the about section content.</p>
+    <BorderContent />
   </section>
 </template>
 
-<style score>
-  .about-section {
-    background-color: aquamarine;
-    height: 25rem;
-  }
+<style scoped>
+
 </style>

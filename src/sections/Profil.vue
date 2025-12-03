@@ -7,10 +7,4 @@
   </section>
 </template>
 
-<style scope>
-  .profil-section {
-    background-color: darkblue;
-    height: 25rem;
-
-  }
-</style>
+<style scoped></style>

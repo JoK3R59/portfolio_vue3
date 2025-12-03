@@ -1,16 +1,15 @@
-<script lang="ts"></script>
+<script setup lang="ts">
+  import BorderContent from '../component/border_content.vue';
+</script>
 
 <template>
   <div class="skill_section">
     <h2>Skills</h2>
     <p>This is the Skills section.</p>
+    <BorderContent />
   </div>
-
 </template>
 
 <style scoped>
-  .skill_section {
-    background-color: brown;
-    height: 25rem;
-  }
+
 </style>

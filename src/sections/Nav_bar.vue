@@ -17,8 +17,5 @@
     z-index: 1000; /* pour passer au-dessus du contenu */
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    /* fond pour test */
-    background-color: rgb(153, 8, 85);
-    height: 5rem;
   }
 </style>

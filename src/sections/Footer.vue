@@ -9,8 +9,5 @@
 </template>
 
 <style scoped>
-  .footer_section {
-    background-color: darkslateblue;
-    height: 10rem;
-  }
+
 </style>
