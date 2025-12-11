@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import './assets/reset.css'
   // Import Sections
   import Profil from './sections/Profil.vue';
   import About from './sections/About.vue';
@@ -9,10 +8,15 @@
   import Education from './sections/Education.vue';
   import Footer from './sections/Footer.vue';
   import Nav_bar from './sections/Nav_bar.vue';
+  // Import Data
+  import { personalData } from './assets/data/personalData';
 </script>
 
 <template>
-  <Nav_bar />
+  <Nav_bar 
+    :sectionTitles = "personalData.sectionTitles"
+    :scrollTitles = "personalData.scrollTitles"
+  />
   <Profil />
   <div id="portfolio_content">
     <About />
