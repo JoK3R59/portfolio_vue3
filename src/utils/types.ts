@@ -16,6 +16,11 @@ export interface Section {
   content: string;
 }
 
+export interface InfoItems {
+  label: string;
+  value: string;
+}
+
 interface AboutMe {
   p1: string;
   p2: string;
@@ -72,7 +77,7 @@ interface SectionTitles {
   icon: string;
 }
 
-export interface PersonalData {
+interface Profil {
   name: string;
   age: number;
   sexe: string;
@@ -83,6 +88,10 @@ export interface PersonalData {
   phone: string;
   job: string;
   email: string;
+}
+
+export interface PersonalData {
+  profil: Profil;
   aboutMe: AboutMe;
   socialLinks: SocialLinks;
   sections: Sections;

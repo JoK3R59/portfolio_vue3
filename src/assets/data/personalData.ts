@@ -1,16 +1,18 @@
 import type { PersonalData } from "@/utils/types";
 
 export const personalData: PersonalData = {
-  name: "Guillaume Ersent",
-  age: 1990,
-  sexe: "Homme",
-  jobTitle: "Développeur",
-  subTitle: "Web & Mobile",
-  address: "Bondues, France",
-  langage: "Français, Anglais",
-  phone: "+33 6 12 34 56 78",
-  job: "",
-  email: "guillaume@example.com",
+  profil : {
+    name: "Guillaume Ersent",
+    age: 1990,
+    sexe: "Homme",
+    jobTitle: "Développeur",
+    subTitle: "Web & Mobile",
+    address: "Lille et ses alentours – FRANCE",
+    phone: "",
+    langage: "Français, Anglais",
+    job: "",
+    email: "guillaume@example.com",
+  },
   sectionTitles: [
     {
       text : "Qui suis-je ?",

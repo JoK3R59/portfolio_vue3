@@ -3,26 +3,26 @@
 <template>
   <div class="border_content">
     <slot></slot>
-    <p>Test du truk</p>
   </div>
 </template>
 
 <style scoped>
   .border_content {
     /* TEST */
-    background-color: #3B424C;
+    background-color: #3b424cab;
     /* END TEST */
     /* border: 2px solid black; */
-    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.726);
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.50);
     border-radius: 0.5em;
     margin: 1rem 0;
-    height: 2rem;
+    /* height: 2rem; */
     width: auto;
+    /* padding: 1rem; */
   }
   @media (min-width: 1200px) {
     /* PC standard */
     .border_content {
-      height: 6rem;
+      /* height: 6rem; */
     }
   }
 </style>

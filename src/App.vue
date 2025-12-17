@@ -15,16 +15,16 @@
 <template>
   <Nav_bar 
     :sectionTitles = "personalData.sectionTitles"
-    :scrollTitles = "personalData.scrollTitles"
-  />
+    :scrollTitles = "personalData.scrollTitles"/>
   <Profil
-    :name="personalData.name"
-    :jobTitle="personalData.jobTitle"
-    :subTitle="personalData.subTitle"
-    :socialLinks="personalData.socialLinks"
-  />
+    :name="personalData.profil.name"
+    :jobTitle="personalData.profil.jobTitle"
+    :subTitle="personalData.profil.subTitle"
+    :socialLinks="personalData.socialLinks"/>
   <div id="portfolio_content">
-    <About />
+    <About 
+      :profil="personalData.profil"
+      :aboutMe="personalData.aboutMe"/>
     <Skill />
     <Project />
     <Experience />
@@ -35,7 +35,7 @@
 
 <style>
   #portfolio_content {
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
   }
   @media (min-width: 1200px) {
     /* PC standard */
