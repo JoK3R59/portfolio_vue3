@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
 /* Reset complet */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -20,9 +23,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-@import "tailwindcss";
-@plugin "daisyui";
-
 /* BACKGROUND-COLOR DEV */
   #app {
     background-color: #0A0F1F;
@@ -33,7 +33,7 @@ time, mark, audio, video {
   }
   .profil-section {
     background-color: darkblue;
-    height: 25rem;
+    /* height: 25rem; */
   }
   .about-section {
     background-color: aquamarine;

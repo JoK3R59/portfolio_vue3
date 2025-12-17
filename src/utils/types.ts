@@ -1,7 +1,9 @@
-export interface AboutMe {
-  p1: string;
-  p2: string;
-  p3: string;
+export interface Skill {
+  name: string;
+  percentage: number;
+  color: string;
+  svg: string;
+  link: string;
 }
 
 export interface SocialLink {
@@ -9,17 +11,23 @@ export interface SocialLink {
   svg: string;
 }
 
-export interface SocialLinks {
-  linkedin: SocialLink;
-  github: SocialLink;
-}
-
 export interface Section {
   title: string;
   content: string;
 }
 
-export interface Sections {
+interface AboutMe {
+  p1: string;
+  p2: string;
+  p3: string;
+}
+
+interface SocialLinks {
+  linkedin: SocialLink;
+  github: SocialLink;
+}
+
+interface Sections {
   profile: Section;
   skills: Section;
   projects: Section;
@@ -27,7 +35,7 @@ export interface Sections {
   education: Section;
 }
 
-export interface Skills {
+interface Skills {
   s1: Skill;
   s2: Skill;
   s3: Skill;
@@ -40,22 +48,14 @@ export interface Skills {
   s10: Skill;
 }
 
-export interface Skill {
-  name: string;
-  percentage: number;
-  color: string;
-  svg: string;
-  link: string;
-}
-
-export interface Project {
+interface Project {
   title: string;
   description: string;
   link: string;
   image: string;
 }
 
-export interface Experiences {
+interface Experiences {
   title: string;
   company: string;
   website: string;
