@@ -20,6 +20,13 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  font-family: "Roboto", sans-serif;
+  /* Meilleur font à définir
+    Pacifico
+    Bebas Neue
+    Monday Sans
+    Roboto
+  */
   vertical-align: baseline;
 }
 

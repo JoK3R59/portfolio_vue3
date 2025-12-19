@@ -21,6 +21,13 @@ export interface InfoItems {
   value: string;
 }
 
+export interface Props {
+  value: number
+  size?: 'xs' | 'sm' | 'md' | 'lg'
+  color?: string
+  showLabel?: boolean
+}
+
 interface AboutMe {
   p1: string;
   p2: string;
