@@ -1,20 +1,29 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-  import BorderContent from '../component/border_content.vue';
-  import ProgressBar from '../component/progress_bar.vue';
-  import type { PersonalData } from '../utils/types';
+import type { PersonalData } from '../utils/types';
+import BorderContent from '../component/border_content.vue';
+import ProgressBar from '../component/progress_bar.vue';
+import Svg_config from '@/component/svg_config.vue';
 
   const props = defineProps<{
     skills: PersonalData["skills"];
+    tools: PersonalData["tools"];
+    titleSections: PersonalData["sectionTitles"];
   }>();
 </script>
 
 <template>
   <div class="skill_section">
+    <div class="title_section flex flex-row items-center justify-center mb-8">
+      <Svg_config :name="props.titleSections[1]?.icon" class="w-12 h-12 mb-1 mr-1" />
+      <p>{{ props.titleSections[1]?.text }}</p>
+    </div>
+
     <BorderContent>
       <div class="card bg-[#3B424C] card-md w-full">
         <div class="card-body">
           <div class="skills">
-            <div v-for="( value ) in props.skills" class="skill_progress px-2">
+            <div v-for="( value ) in props.skills" class="skill_progress px-2" :key="value.name">
               <div class="context_progress flex justify-between items-end">
                 <div class="title_progress flex flex-row items-center w-full">
                   <img class="svg" 

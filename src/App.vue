@@ -26,7 +26,9 @@
       :profil="personalData.profil"
       :aboutMe="personalData.aboutMe"/>
     <Skill 
-      :skills="personalData.skills"/>
+      :skills="personalData.skills"
+      :tools="personalData.tools"
+      :titleSections="personalData.sectionTitles"/>
     <Project />
     <Experience />
     <Education />

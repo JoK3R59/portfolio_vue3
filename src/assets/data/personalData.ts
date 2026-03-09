@@ -156,6 +156,53 @@ export const personalData: PersonalData = {
       svg: 'mongo'
     },
   },
+  tools: [
+    {
+      name: 'linux',
+      label: 'Linux',
+      svg: 'linux'
+    },
+    {
+      name: 'micro-services',
+      label: 'Micro-Services',
+      svg: 'sitemap'
+    },
+    {
+      name: 'git',
+      label: 'Git',
+      svg: 'git'
+    },
+    {
+      name: 'git-branch',
+      label: 'Git-Branch',
+      svg: 'branch'
+    },
+    {
+      name: 'github',
+      label: 'Github',
+      svg: 'github'
+    },
+    {
+      name: 'nodejs',
+      label: 'Node.js',
+      svg: 'nodejs'
+    },
+    {
+      name: 'framework',
+      label: 'Frameworks',
+      svg: 'framework'
+    },
+    {
+      name: 'check-list',
+      label: 'Méthodologies',
+      svg: 'list-check'
+    },
+    {
+      name: 'docker',
+      label: 'Docker',
+      svg: 'docker'
+    }
+  ],
   projects: [
     {
       title: "Portfolio",

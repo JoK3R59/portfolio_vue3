@@ -1,3 +1,4 @@
+/* PERSONAL DATA */
 export interface Skill {
   name: string;
   percentage: number;
@@ -16,16 +17,10 @@ export interface Section {
   content: string;
 }
 
-export interface InfoItems {
+interface Tools {
+  name: string;
   label: string;
-  value: string;
-}
-
-export interface Props {
-  value: number
-  size?: 'xs' | 'sm' | 'md' | 'lg'
-  color?: string
-  showLabel?: boolean
+  svg: string;
 }
 
 interface AboutMe {
@@ -103,8 +98,24 @@ export interface PersonalData {
   socialLinks: SocialLinks;
   sections: Sections;
   skills: Skills;
+  tools: Tools[];
   projects: Project[];
   experiences: Experiences[];
   sectionTitles: SectionTitles[];
   scrollTitles: string[];
 }
+
+/* /!\ END PERSONAL DATA /!\ */
+
+export interface InfoItems {
+  label: string;
+  value: string;
+}
+
+export interface Props {
+  value: number
+  size?: 'xs' | 'sm' | 'md' | 'lg'
+  color?: string
+  showLabel?: boolean
+}
+

@@ -12,7 +12,7 @@
     background-color: #3b424cab;
     /* END TEST */
     /* border: 2px solid black; */
-    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.50);
+    box-shadow: 0 2px 15px rgba(156, 156, 156, 0.5);
     border-radius: 0.5em;
     margin: 1rem 0;
     /* height: 2rem; */
