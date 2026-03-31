@@ -29,7 +29,7 @@
               :style="imageCompany" 
             />
   
-            <hr />
+            <hr class="balise-hr"/>
   
             <div class="period-timeline flex flex-col items-center justify-center">
               <h1>{{ props.experiences[0]?.month_end }} {{ props.experiences[0]?.year_end }}</h1>
@@ -39,7 +39,7 @@
               <h1>{{ props.experiences[0]?.month_start }} {{ props.experiences[0]?.year_start }}</h1>
             </div>
   
-            <hr />
+            <hr class="balise-hr"/>
   
             <p class="flex flex-col items-center justify-center"> ( 2 ans ) </p>
           </div>
@@ -47,7 +47,7 @@
 
         <div class="card view-content">
           <h1>{{ props.experiences[0]?.title }}</h1>
-          <hr />
+          <hr class="balise-hr"/>
           <h2>Expérience à venir</h2>
           <p>Cette section est en cours de développement. Revenez bientôt pour découvrir mes expériences professionnelles !</p>
         </div>
@@ -59,7 +59,7 @@
 <style scoped>
 .color-content {
   background-color: #095797;
-  border-radius: 0.5em 0.5em 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .view-content{
@@ -71,5 +71,11 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 50px;
+}
+
+.balise-hr {
+  color: inherit;
+  margin: 1rem 0;
+  opacity: .25;
 }
 </style>
