@@ -59,6 +59,7 @@
 <style scoped>
 .color-content {
   background-color: #095797;
+  border-radius: 0.5em 0.5em 0 0;
 }
 
 .view-content{
