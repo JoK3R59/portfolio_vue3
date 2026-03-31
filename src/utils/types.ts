@@ -65,6 +65,7 @@ interface Project {
 interface Experiences {
   title: string;
   company: string;
+  image: string;
   website: string;
   month_start: string;
   month_end: string;

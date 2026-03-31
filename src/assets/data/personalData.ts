@@ -231,13 +231,14 @@ export const personalData: PersonalData = {
   ],
   experiences: [
     {
-      title: "Développeur Web",
-      company: "XYZ",
+      title: "Développeur Web et app-Mobile",
+      company: "Acteam-it",
+      image: "acteamit",
       website: "https://www.xyz.com",
-      month_start: "Janvier",
-      year_start: "2017",
-      month_end: "Mars",
-      year_end: "today",
+      month_start: "Juin",
+      year_start: "2022",
+      month_end: "Mai",
+      year_end: "2024",
       details: [
         "Développement d'applications web et mobiles.",
         "Participation à la conception et à la mise en œuvre de nouvelles fonctionnalités.",
@@ -247,6 +248,7 @@ export const personalData: PersonalData = {
     {
       title: "Stage en développement",
       company: "ABC",
+      image: "abc",
       website: "https://www.abc.com",
       month_start: "Janvier",
       year_start: "2017",

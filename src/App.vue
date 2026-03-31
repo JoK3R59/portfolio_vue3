@@ -4,7 +4,7 @@
   import AboutCard from '@/cards/AboutCard.vue';
   import SkillCard from '@/cards/SkillCard.vue';
   import ProjectCard from '@/cards/ProjectCard.vue';
-  import Experience from '@/cards/Experience.vue';
+  import ExperienceCard from '@/cards/ExperienceCard.vue';
   import Education from '@/cards/Education.vue';
   import Footer from '@/cards/Footer.vue';
   import Nav_bar from '@/cards/Nav_bar.vue';
@@ -32,7 +32,9 @@
     <ProjectCard 
       :projects="personalData.projects"
       :titleSections="personalData.sectionTitles" />
-    <Experience />
+    <ExperienceCard 
+      :titleSections="personalData.sectionTitles"
+      :experiences="personalData.experiences" />
     <Education />
   </div>
   <Footer />
