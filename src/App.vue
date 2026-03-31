@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  // Import Sections
-  import Profil from '@/sections/Profil.vue';
-  import About from '@/sections/About.vue';
-  import Skill from '@/sections/Skill.vue';
-  import Project from '@/sections/Project.vue';
-  import Experience from '@/sections/Experience.vue';
-  import Education from '@/sections/Education.vue';
-  import Footer from '@/sections/Footer.vue';
-  import Nav_bar from '@/sections/Nav_bar.vue';
+  // Import Cards
+  import ProfilCard from '@/cards/ProfilCard.vue';
+  import AboutCard from '@/cards/AboutCard.vue';
+  import SkillCard from '@/cards/SkillCard.vue';
+  import ProjectCard from '@/cards/ProjectCard.vue';
+  import Experience from '@/cards/Experience.vue';
+  import Education from '@/cards/Education.vue';
+  import Footer from '@/cards/Footer.vue';
+  import Nav_bar from '@/cards/Nav_bar.vue';
   // Import Data
   import { personalData } from '@/assets/data/personalData';
 </script>
@@ -15,21 +15,23 @@
 <template>
   <Nav_bar 
     :sectionTitles = "personalData.sectionTitles"
-    :scrollTitles = "personalData.scrollTitles"/>
-  <Profil
+    :scrollTitles = "personalData.scrollTitles" />
+  <ProfilCard
     :name="personalData.profil.name"
     :jobTitle="personalData.profil.jobTitle"
     :subTitle="personalData.profil.subTitle"
-    :socialLinks="personalData.socialLinks"/>
+    :socialLinks="personalData.socialLinks" />
   <div id="portfolio_content">
-    <About 
+    <AboutCard 
       :profil="personalData.profil"
-      :aboutMe="personalData.aboutMe"/>
-    <Skill 
+      :aboutMe="personalData.aboutMe" />
+    <SkillCard 
       :skills="personalData.skills"
       :tools="personalData.tools"
-      :titleSections="personalData.sectionTitles"/>
-    <Project />
+      :titleSections="personalData.sectionTitles" />
+    <ProjectCard 
+      :projects="personalData.projects"
+      :titleSections="personalData.sectionTitles" />
     <Experience />
     <Education />
   </div>

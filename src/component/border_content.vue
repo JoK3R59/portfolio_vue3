@@ -1,4 +1,7 @@
-<script lang="ts"></script>
+<script lang="ts">
+
+
+</script>
 
 <template>
   <div class="border_content">
@@ -19,6 +22,7 @@
     width: auto;
     /* padding: 1rem; */
   }
+  
   @media (min-width: 1200px) {
     /* PC standard */
     .border_content {

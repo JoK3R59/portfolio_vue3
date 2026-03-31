@@ -214,19 +214,19 @@ export const personalData: PersonalData = {
       title: "Starcraft : le jeu de plateau (2008)",
       description: "Outil d'informations lié au jeu de plateau Starcraft.",
       link: "",
-      image: "Screenshot"
+      image: "Screenshot_1"
     },
     {
       title: "Projet <ALT> Formation",
       description: "Prof & Parents - site web ",
       link: "",
-      image: "Screenshot"
+      image: "Screenshot_2"
     },
     {
       title: "Decouvrez mes autres projets",
       description: "Et n'hésitez à me suivre sur Github.",
       link: "",
-      image: "Screenshot"
+      image: "Screenshot_3"
     }
   ],
   experiences: [

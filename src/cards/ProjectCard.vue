@@ -1,0 +1,37 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+<script setup lang="ts">
+  import MultiBorderContent from '../component/multi_border_content.vue';
+  import type { PersonalData } from '../utils/types';
+  import Svg_config from '@/component/svg_config.vue';
+
+  const props = defineProps<{
+    projects: PersonalData["projects"];
+    titleSections: PersonalData["sectionTitles"];
+  }>();
+</script>
+
+<template>
+  <div class="project_section">
+    <div class="title_section flex flex-row items-center justify-center mb-8">
+      <Svg_config :name="props.titleSections[2]?.icon" class="w-12 h-12 mb-1 mr-1" />
+      <p>{{ props.titleSections[2]?.text }}</p>
+    </div>
+
+    <MultiBorderContent 
+      v-for="value in props.projects" 
+      :key="value.title" 
+      :image="value.image"
+    >
+      <div class="card  card-md w-full">
+        <div class="card-body">
+          <h2>{{ value.title }}</h2>
+          <p>{{ value.description }}</p>
+        </div>
+      </div>
+    </MultiBorderContent>
+  </div>
+</template>
+
+<style scoped>
+
+</style>
