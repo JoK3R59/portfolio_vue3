@@ -13,7 +13,7 @@
 <template>
   <div class="project_section">
     <div class="title_section flex flex-row items-center justify-center mb-8">
-      <Svg_config :name="props.titleSections[2]?.icon" class="w-12 h-12 mb-1 mr-1" />
+      <Svg_config :name="props.titleSections[2]?.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
       <p>{{ props.titleSections[2]?.text }}</p>
     </div>
 

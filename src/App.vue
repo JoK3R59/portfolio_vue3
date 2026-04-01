@@ -7,13 +7,13 @@
   import ExperienceCard from '@/cards/ExperienceCard.vue';
   import Education from '@/cards/Education.vue';
   import Footer from '@/cards/Footer.vue';
-  import Nav_bar from '@/cards/Nav_bar.vue';
+  import NavBar from '@/cards/NavBar.vue';
   // Import Data
   import { personalData } from '@/assets/data/personalData';
 </script>
 
 <template>
-  <Nav_bar 
+  <NavBar 
     :sectionTitles = "personalData.sectionTitles"
     :scrollTitles = "personalData.scrollTitles" />
   <ProfilCard

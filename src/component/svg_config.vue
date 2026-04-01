@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-  const props = defineProps({
-    name: { type: String, required: true, default: '' },
-    class: { type: [String, Array, Object], default: '' }
-  })
+  const props = withDefaults(
+    defineProps<{ 
+      name: string;
+      class?: string;
+    }>(), {
+      name: '',
+      class: ''
+    }
+  )
 
 // Import automatique des SVG comme composants
   const icons = import.meta.glob('@/assets/svg/*.svg', {

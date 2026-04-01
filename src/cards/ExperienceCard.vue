@@ -17,7 +17,7 @@
 <template>
   <div class="experience_section">
     <div class="title_section flex flex-row items-center justify-center">
-      <Svg_config :name="props.titleSections[3]?.icon" class="w-12 h-12 mb-1 mr-1" />
+      <Svg_config :name="props.titleSections[3]?.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
       <p>{{ props.titleSections[3]?.text }}</p>
     </div>
 

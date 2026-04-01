@@ -85,70 +85,70 @@ export const personalData: PersonalData = {
     }
   },
   skills:{
-    s1: {
+    html: {
       name: 'html',
       percentage: 90,
       link: 'https://developer.mozilla.org/fr/docs/Web/HTML',
       color: '#E44D27',
       svg: 'html'
     },
-    s2: {
+    css: {
       name: 'css',
       percentage: 85,
       link: 'https://developer.mozilla.org/fr/docs/Web/CSS',
       color: '#0162B0',
       svg: 'css'
     },
-    s3: {
+    typescript: {
       name: 'typescript',
       percentage: 80,
       link: 'https://www.typescriptlang.org/',
       color: '#3077C6',
       svg: 'typescript'
     },
-    s4: {
+    javascript: {
       name: 'javascript',
       percentage: 90,
       link: 'https://developer.mozilla.org/fr/docs/Web/JavaScript',
       color: '#EFC624',
       svg: 'js'
     },
-    s5: {
+    vue: {
       name: 'vue 3',
       percentage: 80,
       link: 'https://v3.vuejs.org/',
       color: '#38956A',
       svg: 'vue'
     },
-    s6: {
+    react: {
       name: 'react',
       percentage: 80,
       link: 'https://react.dev/',
       color: '#58C4DC',
       svg: 'reactjs'
     },
-    s7: {
+    flutter: {
       name: 'flutter',
       percentage: 80,
       link: 'https://flutter.dev/',
       color: '#64C4EE',
       svg: 'flutter'
     },
-    s8: {
+    kotlin: {
       name: 'kotlin',
       percentage: 70,
       link: 'https://kotlinlang.org/',
       color: '#D32DAF',
       svg: 'kotlin'
     },
-    s9: {
+    mysql: {
       name: 'mysql',
       percentage: 60,
       link: 'https://www.mysql.com/fr/',
       color: '#017395',
       svg: 'mysql'
     },
-    s10: {
+    mongodb: {
       name: 'mongodb',
       percentage: 60,
       link: 'https://www.mongodb.com/fr',

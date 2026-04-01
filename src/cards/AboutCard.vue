@@ -29,9 +29,9 @@
         </h2>
         <hr />
         <div class="card-content">
-          <p class="text-base" 
-            v-html="props.aboutMe.p1"
-          ></p>
+          <p class="text-base">
+          {{ props.aboutMe.p1 }}
+          </p>
           <p class="text-base">
             {{ props.aboutMe.p2 }}
           </p>

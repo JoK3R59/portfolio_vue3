@@ -15,7 +15,7 @@ import Svg_config from '@/component/svg_config.vue';
 <template>
   <div class="skill_section">
     <div class="title_section flex flex-row items-center justify-center mb-8">
-      <Svg_config :name="props.titleSections[1]?.icon" class="w-12 h-12 mb-1 mr-1" />
+      <Svg_config :name="props.titleSections[1]?.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
       <p>{{ props.titleSections[1]?.text }}</p>
     </div>
 

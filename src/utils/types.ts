@@ -42,19 +42,6 @@ interface Sections {
   education: Section;
 }
 
-interface Skills {
-  s1: Skill;
-  s2: Skill;
-  s3: Skill;
-  s4: Skill;
-  s5: Skill;
-  s6: Skill;
-  s7: Skill;
-  s8: Skill;
-  s9: Skill;
-  s10: Skill;
-}
-
 interface Project {
   title: string;
   description: string;
@@ -98,7 +85,7 @@ export interface PersonalData {
   aboutMe: AboutMe;
   socialLinks: SocialLinks;
   sections: Sections;
-  skills: Skills;
+  skills: Record<string, Skill>; /** Compétences indexées par identifiant technique. Chaque valeur décrit le nom, niveau et icône. */
   tools: Tools[];
   projects: Project[];
   experiences: Experiences[];
