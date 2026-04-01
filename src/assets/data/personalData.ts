@@ -248,7 +248,7 @@ export const personalData: PersonalData = {
     {
       title: "Stage en développement",
       company: "ABC",
-      image: "abc",
+      image: "freelance",
       website: "https://www.abc.com",
       month_start: "Janvier",
       year_start: "2017",

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import { computed } from 'vue'
   import type { PersonalData } from '../utils/types';
   import Svg_config from '@/component/svg_config.vue';
   import BorderContent from '../component/border_content.vue';
@@ -9,9 +8,11 @@
     experiences: PersonalData["experiences"];
   }>();
 
-  const imageCompany = computed(() => ({
-    backgroundImage: `url(${new URL(`../assets/logos/${props.experiences[0]?.image}.webp`, import.meta.url).href})`
-  }));
+  function imageCompany(image: string) {
+    return {
+      backgroundImage: `url(${new URL(`../assets/logos/${image}.webp`, import.meta.url).href})`
+    };
+  }
 </script>
 
 <template>
@@ -21,22 +22,25 @@
       <p>{{ props.titleSections[3]?.text }}</p>
     </div>
 
-    <BorderContent>
+    <BorderContent
+      v-for="value in props.experiences" 
+      :key="value.company" 
+    >
       <div class="card bg-[#3B424C] card-md w-full">
         <div class="color-content">
           <div class="card view-content">
             <div class="image_company" 
-              :style="imageCompany" 
+              :style="imageCompany(value.image)" 
             />
   
             <hr class="balise-hr"/>
   
             <div class="period-timeline flex flex-col items-center justify-center">
-              <h1>{{ props.experiences[0]?.month_end }} {{ props.experiences[0]?.year_end }}</h1>
+              <h1>{{ value.month_end }} {{ value.year_end }}</h1>
     
               <p>Fleche</p>
     
-              <h1>{{ props.experiences[0]?.month_start }} {{ props.experiences[0]?.year_start }}</h1>
+              <h1>{{ value.month_start }} {{ value.year_start }}</h1>
             </div>
   
             <hr class="balise-hr"/>
@@ -46,7 +50,7 @@
         </div>
 
         <div class="card view-content">
-          <h1>{{ props.experiences[0]?.title }}</h1>
+          <h1>{{ value.title }}</h1>
           <hr class="balise-hr"/>
           <h2>Expérience à venir</h2>
           <p>Cette section est en cours de développement. Revenez bientôt pour découvrir mes expériences professionnelles !</p>

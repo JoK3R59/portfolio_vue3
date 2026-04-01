@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
   import type { PersonalData } from '../utils/types';
-  import MultiBorderContent from '../component/multi_border_content.vue';
+  import BorderMultiContent from '../component/border_multi_content.vue';
   import Svg_config from '@/component/svg_config.vue';
 
   const props = defineProps<{
@@ -17,7 +17,7 @@
       <p>{{ props.titleSections[2]?.text }}</p>
     </div>
 
-    <MultiBorderContent 
+    <BorderMultiContent 
       v-for="value in props.projects" 
       :key="value.title" 
       :image="value.image"
@@ -28,7 +28,7 @@
           <p>{{ value.description }}</p>
         </div>
       </div>
-    </MultiBorderContent>
+    </BorderMultiContent>
   </div>
 </template>
 

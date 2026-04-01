@@ -19,6 +19,7 @@ CLAUDE.md
 *.png
 *.jpg
 *.svg
+*.webp
 
 # Editor directories and files
 .vscode/*
