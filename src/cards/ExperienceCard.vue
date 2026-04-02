@@ -1,10 +1,11 @@
 <script setup lang="ts">
-  import type { PersonalData } from '../utils/types';
-  import Svg_config from '@/component/svg_config.vue';
-  import BorderContent from '../component/border_content.vue';
+  import type { PersonalData } from '@/utils/types';
+  import { formatDateFR, calculateDuration } from '@/utils';
+  import SvgConfig from '@/component/svgConfig.vue';
+  import BorderContent from '@/component/border_content.vue';
 
   const props = defineProps<{
-    titleSections: PersonalData["sectionTitles"];
+    sectionTitles: PersonalData["sectionTitles"][number];
     experiences: PersonalData["experiences"];
   }>();
 
@@ -18,42 +19,53 @@
 <template>
   <div class="experience_section">
     <div class="title_section flex flex-row items-center justify-center">
-      <Svg_config :name="props.titleSections[3]?.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
-      <p>{{ props.titleSections[3]?.text }}</p>
+      <SvgConfig :name="props.sectionTitles.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
+      <h1>{{ props.sectionTitles.text }}</h1>
     </div>
 
     <BorderContent
-      v-for="value in props.experiences" 
-      :key="value.company" 
+      v-for="value, id in props.experiences" 
+      :key="id" 
     >
       <div class="card bg-[#3B424C] card-md w-full">
         <div class="color-content">
           <div class="card view-content">
-            <div class="image_company" 
-              :style="imageCompany(value.image)" 
-            />
+            <a 
+              :href="value.website == '' ? '#' : value.website"
+              :target="value.website == '' ? '_self' : '_blank'">
+              <div class="image_company" 
+                :style=" imageCompany(value.image) " 
+              />
+            </a>
   
             <hr class="balise-hr"/>
   
             <div class="period-timeline flex flex-col items-center justify-center">
-              <h1>{{ value.month_end }} {{ value.year_end }}</h1>
+              <span>{{ formatDateFR(value.month_end, value.year_end) }}</span>
+              
+              <SvgConfig :name="'arrow-top'" class="w-8 h-8 mb-1 mt-1" />
     
-              <p>Fleche</p>
-    
-              <h1>{{ value.month_start }} {{ value.year_start }}</h1>
+              <span>{{ formatDateFR(value.month_start, value.year_start) }}</span>
             </div>
   
             <hr class="balise-hr"/>
   
-            <p class="flex flex-col items-center justify-center"> ( 2 ans ) </p>
+            <p class="flex items-center justify-center">
+              ( {{ calculateDuration(value.month_start, value.year_start, value.month_end, value.year_end) }} )
+            </p>
           </div>
         </div>
 
         <div class="card view-content">
-          <h1>{{ value.title }}</h1>
+          <h2>{{ value.title }}</h2>
           <hr class="balise-hr"/>
-          <h2>Expérience à venir</h2>
-          <p>Cette section est en cours de développement. Revenez bientôt pour découvrir mes expériences professionnelles !</p>
+          <p 
+            v-for="item, id in value.details" 
+            :key="id"
+            class="paragraph"
+          >
+            {{ item }}
+          </p>
         </div>
       </div>
     </BorderContent>
@@ -81,5 +93,9 @@
   color: inherit;
   margin: 1rem 0;
   opacity: .25;
+}
+
+.paragraph {
+  margin-bottom: 1rem;
 }
 </style>

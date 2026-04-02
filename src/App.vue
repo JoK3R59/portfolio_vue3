@@ -28,12 +28,12 @@
     <SkillCard 
       :skills="personalData.skills"
       :tools="personalData.tools"
-      :titleSections="personalData.sectionTitles" />
+      :sectionTitles="personalData.sectionTitles[1]!" />
     <ProjectCard 
       :projects="personalData.projects"
-      :titleSections="personalData.sectionTitles" />
+      :sectionTitles="personalData.sectionTitles[2]!" />
     <ExperienceCard 
-      :titleSections="personalData.sectionTitles"
+      :sectionTitles="personalData.sectionTitles[3]!"
       :experiences="personalData.experiences" />
     <Education />
   </div>

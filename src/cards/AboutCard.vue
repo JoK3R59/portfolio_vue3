@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { computed } from 'vue';
-  import BorderContent from '../component/border_content.vue';
+  import BorderContent from '@/component/border_content.vue';
   import { calculateAge } from '@/utils';
   import type { PersonalData, InfoItems } from "@/utils/types";
 
@@ -11,7 +11,7 @@
 
   const informations = computed<InfoItems[]>(() => [
     { label: 'Sexe', value: props.profil.sexe },
-    { label: 'Age', value: `${calculateAge(props.profil.age)} ans` },
+    { label: 'Age', value: `${ calculateAge(props.profil.age) } ans` },
     { label: 'Email', value: props.profil.email },
     // { label: 'Téléphone', value: props.profil.phone },
     { label: 'Adresse', value: props.profil.address },

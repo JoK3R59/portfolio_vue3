@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import BorderContent from '../component/border_content.vue';
+  import BorderContent from '@/component/border_content.vue';
 </script>
 
 <template>

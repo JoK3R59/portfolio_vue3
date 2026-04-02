@@ -1,20 +1,20 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-  import type { PersonalData } from '../utils/types';
-  import BorderMultiContent from '../component/border_multi_content.vue';
-  import Svg_config from '@/component/svg_config.vue';
+  import type { PersonalData } from '@/utils/types';
+  import BorderMultiContent from '@/component/border_multi_content.vue';
+  import Svg_config from '@/component/svgConfig.vue';
 
   const props = defineProps<{
     projects: PersonalData["projects"];
-    titleSections: PersonalData["sectionTitles"];
+    sectionTitles: PersonalData["sectionTitles"][number];
   }>();
 </script>
 
 <template>
   <div class="project_section">
     <div class="title_section flex flex-row items-center justify-center mb-8">
-      <Svg_config :name="props.titleSections[2]?.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
-      <p>{{ props.titleSections[2]?.text }}</p>
+      <Svg_config :name="props.sectionTitles.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
+      <p>{{ props.sectionTitles.text }}</p>
     </div>
 
     <BorderMultiContent 

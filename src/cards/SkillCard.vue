@@ -3,20 +3,20 @@
 import type { PersonalData } from '@/utils/types';
 import BorderContent from '@/component/border_content.vue';
 import ProgressBar from '@/component/progress_bar.vue';
-import Svg_config from '@/component/svg_config.vue';
+import SvgConfig from '@/component/svgConfig.vue';
 
   const props = defineProps<{
     skills: PersonalData["skills"];
     tools: PersonalData["tools"];
-    titleSections: PersonalData["sectionTitles"];
+    sectionTitles: PersonalData["sectionTitles"][number];
   }>();
 </script>
 
 <template>
   <div class="skill_section">
     <div class="title_section flex flex-row items-center justify-center mb-8">
-      <Svg_config :name="props.titleSections[1]?.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
-      <p>{{ props.titleSections[1]?.text }}</p>
+      <SvgConfig :name="props.sectionTitles.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
+      <p>{{ props.sectionTitles.text }}</p>
     </div>
 
     <BorderContent>

@@ -232,27 +232,35 @@ export const personalData: PersonalData = {
   experiences: [
     {
       title: "Développeur Web et app-Mobile",
-      company: "Acteam-it",
+      company: "acteam-it",
       image: "acteamit",
-      website: "https://www.xyz.com",
-      month_start: "Juin",
+      website: "https://www.acteam-it.com/",
+      month_start: "06",
       year_start: "2022",
-      month_end: "Mai",
+      month_end: "05",
       year_end: "2024",
-      details: [
-        "Développement d'applications web et mobiles.",
-        "Participation à la conception et à la mise en œuvre de nouvelles fonctionnalités.",
-        "Résolution de problèmes et débogage de code.",
+       details: [
+        "À la suite de ma formation de développeur web et mobile chez O’clock, j’ai rejoint Acteam-IT pour ma première expérience professionnelle, où j’ai pu concrétiser mes acquis en intervenant sur des projets destinés à des clients grands comptes, dans des contextes techniques exigeants.",
+
+        "Au sein de l’entreprise, j’interviens aussi bien sur des applications web que mobiles, en assurant leur maintenance, leur évolution et leur bon fonctionnement en production. Mon rôle consiste à diagnostiquer et corriger les anomalies, optimiser les performances et intégrer de nouvelles fonctionnalités en réponse aux besoins métiers.",
+
+        "Au fil de mes missions, j’ai développé une approche orientée qualité et fiabilité, avec une attention particulière portée à la robustesse du code, à la performance des applications et à la maintenabilité des projets dans le temps.",
+
+        "Suite à une spécialisation en Kotlin, j’ai évolué vers un rôle de référent Android. J’accompagne les équipes sur les problématiques mobiles, encadre un alternant et prends en charge des projets de bout en bout, de la conception jusqu’à la mise en production.",
+
+        "J’ai notamment participé à un projet de gestion d’interventions terrain pour un acteur majeur du secteur de l’énergie. Ce projet m’a amené à travailler sur des problématiques concrètes telles que la mise à niveau d’une application Android, l’intégration de fonctionnalités liées aux objets connectés (RFID), la capture et le traitement d’images, ainsi que l’optimisation des performances sur des terminaux mobiles.",
+
+        "Enfin, je veille à produire une documentation technique claire et à jour afin de faciliter la maintenance, le partage de connaissances et la pérennité des applications."
       ]
     },
     {
       title: "Stage en développement",
-      company: "ABC",
+      company: "freelance",
       image: "freelance",
-      website: "https://www.abc.com",
-      month_start: "Janvier",
+      website: "",
+      month_start: "01",
       year_start: "2017",
-      month_end: "Mars",
+      month_end: "03",
       year_end: "2017",
       details: [
         "Développement d'une application web.",

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PersonalData } from '@/utils/types';
-import Svg_config from '@/component/svg_config.vue';
+import Svg_config from '@/component/svgConfig.vue';
 
   const props = defineProps<{
     sectionTitles: PersonalData['sectionTitles'];
