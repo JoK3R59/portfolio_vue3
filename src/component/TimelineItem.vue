@@ -6,13 +6,17 @@ import BorderContent from '@/component/border_content.vue';
 
 const props = defineProps<{
   experiences: PersonalData["experiences"][number];
-
+  activeSchool: boolean;
 }>();
 
 function imageCompany(image: string) {
   return {
     backgroundImage: `url(${new URL(`../assets/logos/${image}.webp`, import.meta.url).href})`
   };
+}
+
+function inverseFlexDirection() {
+  return props.activeSchool ? 'flex flex-col-reverse' : 'flex flex-col';
 }
 </script>
 
@@ -48,7 +52,12 @@ function imageCompany(image: string) {
       </div>
 
       <div class="card view-content">
-        <h2>{{ props.experiences.title }}</h2>
+        <div :class="inverseFlexDirection()">
+          <h2 v-if="props.experiences.company != 'Freelance'">
+            {{ props.experiences.company }}
+          </h2>
+          <h3>{{ props.experiences.title }}</h3>
+        </div>
         <hr class="balise-hr"/>
         <p
           v-for="detail, id in props.experiences.details"

@@ -5,7 +5,7 @@
   import SkillCard from '@/cards/SkillCard.vue';
   import ProjectCard from '@/cards/ProjectCard.vue';
   import ExperienceCard from '@/cards/ExperienceCard.vue';
-  import Education from '@/cards/Education.vue';
+  import EducationCard from '@/cards/EducationCard.vue';
   import Footer from '@/cards/Footer.vue';
   import NavBar from '@/cards/NavBar.vue';
   // Import Data
@@ -35,7 +35,9 @@
     <ExperienceCard 
       :sectionTitles="personalData.sectionTitles[3]!"
       :experiences="personalData.experiences" />
-    <Education />
+    <EducationCard 
+      :sectionTitles="personalData.sectionTitles[4]!"
+      :educations="personalData.educations" />
   </div>
   <Footer />
 </template>

@@ -89,6 +89,7 @@ export interface PersonalData {
   tools: Tools[];
   projects: Project[];
   experiences: Experiences[];
+  educations: Experiences[];
   sectionTitles: SectionTitles[];
   scrollTitles: string[];
 }

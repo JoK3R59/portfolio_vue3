@@ -5,23 +5,22 @@
 
   const props = defineProps<{
     sectionTitles: PersonalData["sectionTitles"][number];
-    experiences: PersonalData["experiences"];
+    educations: PersonalData["educations"];
   }>();
-
 </script>
 
 <template>
-  <div class="experience_section">
+  <div class="education_section">
     <div class="title_section flex flex-row items-center justify-center">
       <SvgConfig :name="props.sectionTitles.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
       <h1>{{ props.sectionTitles.text }}</h1>
     </div>
 
     <TimelineItem 
-      v-for="value, id in props.experiences" 
+      v-for="value, id in props.educations" 
       :key="id"
       :experiences="value"
-      :activeSchool="false"
+      :activeSchool="true"
     />
   </div>
 </template>

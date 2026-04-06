@@ -231,8 +231,26 @@ export const personalData: PersonalData = {
   ],
   experiences: [
     {
-      title: "Développeur Web et app-Mobile",
-      company: "acteam-it",
+      title: "Développeur Web",
+      company: "Freelance",
+      image: "freelance",
+      website: "",
+      month_start: "06",
+      year_start: "2025",
+      month_end: "07",
+      year_end: "2025",
+      details: [
+        "Accompagnement d’un client dans le secteur de la restauration dans la création de son site vitrine, avec l’objectif de proposer une présence en ligne moderne et adaptée aux usages mobiles.",
+        "J’ai commencé par échanger avec le client afin de bien comprendre ses besoins : mise en avant des menus, galerie photos, formulaire de contact et gestion des réservations. Cela m’a permis de proposer une solution efficace, adaptée à son activité.",
+        "Choix et mise en place de WordPress comme CMS, avec intégration d’un outil de réservation externe (TheFork) afin de simplifier la gestion des réservations en ligne.",
+        "Conception du site avec Elementor, en travaillant sur le design des pages, l’ergonomie mobile et l’intégration du système de réservation.",
+        "Configuration des notifications automatiques et la synchronisation avec Google Agenda pour permettre un suivi clair et centralisé des réservations.",
+        "J’ai assuré un accompagnement technique et formé le client aux bonnes pratiques de gestion de contenu, afin qu’il puisse être autonome dans l’utilisation de son site."
+      ]
+    },
+    {
+      title: "Développeur Web et Mobile",
+      company: "Acteam-it, ESN, Roubaix",
       image: "acteamit",
       website: "https://www.acteam-it.com/",
       month_start: "06",
@@ -254,19 +272,56 @@ export const personalData: PersonalData = {
       ]
     },
     {
-      title: "Stage en développement",
-      company: "freelance",
+      title: "Développeur Web et Mobile",
+      company: "Freelance",
       image: "freelance",
       website: "",
       month_start: "01",
-      year_start: "2017",
-      month_end: "03",
-      year_end: "2017",
+      year_start: "2022",
+      month_end: "05",
+      year_end: "2022",
       details: [
-        "Développement d'une application web.",
-        "Création de nouvelles fonctionnalités.",
-        "Tests et débogage."
+        "Accompagnement d’un particulier dans la création de son activité de transport de produits volumineux, en développant une solution pour mettre en relation des clients et des transporteurs.",
+        "J’ai commencé par échanger avec le client pour bien comprendre ses besoins et définir les fonctionnalités essentielles. Cela m’a permis de rédiger un cahier des charges clair et de poser les bases d’un MVP, afin de livrer rapidement une première version utilisable.",
+        "J’ai ensuite développé une application mobile cross-platform avec React Native, permettant de gérer les demandes de livraison et la mise en relation entre les utilisateurs.",
+        "Rôle de développeur principal sur le projet, avec un développeur junior que j’ai accompagné sur les aspects techniques et l’avancement des tâches.",
+        "Mise en place d’une API REST avec Node.js pour gérer les utilisateurs, les commandes et le suivi des livraisons. ainsi que la conception d’une base de données MongoDB pour organiser et stocker les informations liées à l’application.",
+        "Réalisation des tests, correction des bugs et livraison d’une application fonctionnelle, en accord avec les attentes du client."
       ]
     }
   ],
+  educations: [
+    {
+      title: "Concepteur Developpeur d'Application",
+      company: "ALT, Incubateur Tech, niveau 6 (Bac+3/4), Rennes",
+      image: "alt",
+      website: "",
+      month_start: "07",
+      year_start: "2024",
+      month_end: "01",
+      year_end: "2025",
+      details: [
+        "Formation axée sur le développement web full‐stack avec JavaScript.",
+        "Utilisation des technologies React (Front‐End), NestJS et Prisma ORM (Back‐End) avec base de        données SQL.",
+        "Introduction aux principes fondamentaux du DevOps via Docker, AWS, et GitLab CI/CD.",
+        "Mise en œuvre de tests automatisés avec Cypress (E2E) et Jest (tests unitaires)."
+      ]
+    },
+    {
+      title: "Développeur Web et Web mobile",
+      company: "O'clock, Ecole Tech, Niveau 5 (Bac+2), Téléprésentiel",
+      image: "oclock",
+      website: "",
+      month_start: "07",
+      year_start: "2024",
+      month_end: "01",
+      year_end: "2025",
+      details: [
+        "Formation axée sur le développement web full‐stack avec JavaScript.",
+        "Utilisation des technologies React (Front‐End), NestJS et Prisma ORM (Back‐End) avec base de        données SQL.",
+        "Introduction aux principes fondamentaux du DevOps via Docker, AWS, et GitLab CI/CD.",
+        "Mise en œuvre de tests automatisés avec Cypress (E2E) et Jest (tests unitaires)."
+      ]
+    }
+  ]
 };
