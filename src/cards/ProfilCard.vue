@@ -71,7 +71,7 @@
   hr {
     width: 100%;
     margin: 0.5rem auto;
-    border: 2px transparent #fff;
+    border: 2px solid transparent #fff;
   }
   .pulse {
     border-radius: 50%;

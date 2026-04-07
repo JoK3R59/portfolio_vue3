@@ -18,7 +18,7 @@
     </div>
 
     <TimelineItem 
-      v-for="value, id in props.experiences" 
+      v-for="(value, id) in props.experiences" 
       :key="id"
       :experiences="value"
       :activeSchool="false"

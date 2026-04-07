@@ -10,6 +10,10 @@ import SvgConfig from '@/component/svgConfig.vue';
     tools: PersonalData["tools"];
     sectionTitles: PersonalData["sectionTitles"][number];
   }>();
+
+  const getSvgPath = (svgName: string) => {
+    return new URL(`../assets/svg/${svgName}.svg`, import.meta.url).href;
+  };
 </script>
 
 <template>
@@ -23,11 +27,11 @@ import SvgConfig from '@/component/svgConfig.vue';
       <div class="card bg-[#3B424C] card-md w-full">
         <div class="card-body">
           <div class="skills">
-            <div v-for="( value ) in props.skills" class="skill_progress px-2" :key="value.name">
+            <div v-for="value in props.skills" class="skill_progress px-2" :key="value.name">
               <div class="context_progress flex justify-between items-end">
                 <div class="title_progress flex flex-row items-center w-full">
                   <img class="svg" 
-                    :src="`/src/assets/svg/${ value.svg }.svg`" 
+                    :src="getSvgPath(value.svg)"
                     :alt="`SVG - ${ value.name }`"/>
                   <a target="_blank" :href="value.link">
                     {{ value.name }}

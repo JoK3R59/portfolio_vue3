@@ -17,24 +17,24 @@ export interface Section {
   content: string;
 }
 
-interface Tools {
+export interface Tools {
   name: string;
   label: string;
   svg: string;
 }
 
-interface AboutMe {
+export interface AboutMe {
   p1: string;
   p2: string;
   p3: string;
 }
 
-interface SocialLinks {
+export interface SocialLinks {
   linkedin: SocialLink;
   github: SocialLink;
 }
 
-interface Sections {
+export interface Sections {
   profile: Section;
   skills: Section;
   projects: Section;
@@ -42,14 +42,14 @@ interface Sections {
   education: Section;
 }
 
-interface Project {
+export interface Project {
   title: string;
   description: string;
   link: string;
   image: string;
 }
 
-interface Experiences {
+export interface Experiences {
   title: string;
   company: string;
   image: string;
@@ -61,13 +61,13 @@ interface Experiences {
   details: string[];
 }
 
-interface SectionTitles {
+export interface SectionTitles {
   text: string;
   text_mobile: string;
   icon: string;
 }
 
-interface Profil {
+export interface Profil {
   name: string;
   age: number;
   sexe: string;
