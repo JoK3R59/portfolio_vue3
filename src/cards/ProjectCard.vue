@@ -2,7 +2,7 @@
 <script setup lang="ts">
   import type { PersonalData } from '@/utils/types';
   import BorderMultiContent from '@/component/borderMultiContent.vue';
-  import Svg_config from '@/component/svgConfig.vue';
+  import SvgConfig from '@/component/svgConfig.vue';
 
   const props = defineProps<{
     projects: PersonalData["projects"];
@@ -13,7 +13,7 @@
 <template>
   <div class="project_section">
     <div class="title_section flex flex-row items-center justify-center mb-8">
-      <Svg_config :name="props.sectionTitles.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
+      <SvgConfig :name="props.sectionTitles.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
       <p>{{ props.sectionTitles.text }}</p>
     </div>
 

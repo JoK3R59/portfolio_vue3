@@ -69,7 +69,7 @@ export interface SectionTitles {
 
 export interface Profil {
   name: string;
-  age: number;
+  yearOfBirth: number;
   sexe: string;
   jobTitle: string;
   subTitle: string;

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PersonalData } from '@/utils/types';
-import Svg_config from '@/component/svgConfig.vue';
+import SvgConfig from '@/component/svgConfig.vue';
 
   const props = defineProps<{
     sectionTitles: PersonalData['sectionTitles'];
@@ -16,7 +16,7 @@ import Svg_config from '@/component/svgConfig.vue';
         href="#"
         class="flex flex-col items-center min-w-1/6"
       >
-        <Svg_config :name="value.icon" class="w-7 h-7 mb-1" />
+        <SvgConfig :name="value.icon" class="w-7 h-7 mb-1" />
         {{ value.text_mobile }}
       </a>
     </div>

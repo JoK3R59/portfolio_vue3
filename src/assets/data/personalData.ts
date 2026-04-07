@@ -3,7 +3,7 @@ import type { PersonalData } from "@/utils/types";
 export const personalData: PersonalData = {
   profil : {
     name: "Guillaume Ersent",
-    age: 1990,
+    yearOfBirth: 1990,
     sexe: "Homme",
     jobTitle: "Développeur",
     subTitle: "Web & Mobile",
