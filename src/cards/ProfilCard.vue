@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import SocialsLink from '@/component/socialLink.vue';
   import type { SocialLink } from '@/utils/types';
 
   const props = defineProps<{
@@ -10,14 +11,6 @@
       github: SocialLink,
     }
   }>();
-
-  function openLink(selected: string) {
-    if (selected === 'linkedin') {
-      window.open( props.socialLinks.linkedin.link, '_blank' );
-    } else if (selected === 'github') {
-      window.open( props.socialLinks.github.link, '_blank' );
-    }
-  }
 </script>
 
 <template>
@@ -43,21 +36,9 @@
     </div>
 
     <div class="social-links">
-      <div class="tooltip" data-tip="Rejoignez mon réseau.">
-        <button class="btn bg-[#0077B5] btn-circle social-circle"
-          @click="openLink('linkedin')">
-          <img :src="`/src/assets/svg/${ props.socialLinks.linkedin.svg }.svg`"
-            alt="LinkedIn">
-        </button>
-      </div>
-
-      <div class="tooltip" data-tip="Découvrez mes projets.">
-        <button class="btn bg-[#ffffff] btn-circle social-circle github"
-          @click="openLink('github')">
-          <img :src="`/src/assets/svg/${ props.socialLinks.github.svg }.svg`"
-            alt="GitHub">
-        </button>
-      </div>
+      <SocialsLink
+        :linkedin="props.socialLinks.linkedin"
+        :github="props.socialLinks.github" />
     </div>
   </section>
 </template>
@@ -91,9 +72,6 @@
     width: 100%;
     margin: 0.5rem auto;
     border: 2px transparent #fff;
-  }
-  .social-circle {
-    margin: 0 0.5rem;
   }
   .pulse {
     border-radius: 50%;

@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { computed } from 'vue';
-  import BorderContent from '@/component/border_content.vue';
+  import BorderContent from '@/component/borderContent.vue';
   import { calculateAge } from '@/utils';
   import type { PersonalData, InfoItems } from "@/utils/types";
 

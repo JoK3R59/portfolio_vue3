@@ -6,7 +6,7 @@
   import ProjectCard from '@/cards/ProjectCard.vue';
   import ExperienceCard from '@/cards/ExperienceCard.vue';
   import EducationCard from '@/cards/EducationCard.vue';
-  import Footer from '@/cards/Footer.vue';
+  import Footer from '@/cards/FooterCard.vue';
   import NavBar from '@/cards/NavBar.vue';
   // Import Data
   import { personalData } from '@/assets/data/personalData';
@@ -39,7 +39,9 @@
       :sectionTitles="personalData.sectionTitles[4]!"
       :educations="personalData.educations" />
   </div>
-  <Footer />
+  <Footer 
+    :linkedin="personalData.socialLinks.linkedin"
+    :github="personalData.socialLinks.github" />
 </template>
 
 <style>

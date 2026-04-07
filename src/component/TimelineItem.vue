@@ -2,7 +2,7 @@
 import type { PersonalData } from '@/utils/types';
 import { formatDateFR, calculateDuration } from '@/utils';
 import SvgConfig from '@/component/svgConfig.vue';
-import BorderContent from '@/component/border_content.vue';
+import BorderContent from '@/component/borderContent.vue';
 
 const props = defineProps<{
   experiences: PersonalData["experiences"][number];

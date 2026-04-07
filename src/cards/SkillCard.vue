@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import type { PersonalData } from '@/utils/types';
-import BorderContent from '@/component/border_content.vue';
-import ProgressBar from '@/component/progress_bar.vue';
+import BorderContent from '@/component/borderContent.vue';
+import ProgressBar from '@/component/progressBar.vue';
 import SvgConfig from '@/component/svgConfig.vue';
 
   const props = defineProps<{

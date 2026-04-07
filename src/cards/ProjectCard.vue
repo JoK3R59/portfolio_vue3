@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
   import type { PersonalData } from '@/utils/types';
-  import BorderMultiContent from '@/component/border_multi_content.vue';
+  import BorderMultiContent from '@/component/borderMultiContent.vue';
   import Svg_config from '@/component/svgConfig.vue';
 
   const props = defineProps<{
