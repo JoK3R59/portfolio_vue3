@@ -14,6 +14,9 @@ dist-ssr
 coverage
 *.local
 CLAUDE.md
+.dockerignore
+Dockerfile
+docker-compose.yml
 
 # Images
 *.png
