@@ -13,7 +13,7 @@ import SvgConfig from '@/component/svgConfig.vue';
     <div class="menu menu-horizontal w-full justify-around navbar-center"
     >
       <a v-for="(value, id) in props.sectionTitles" :key="id"
-        href="#"
+        :href="id == 0 ? '#' : '#' + props.scrollTitles[id]"
         class="flex flex-col items-center min-w-1/6"
       >
         <SvgConfig :name="value.icon" class="w-7 h-7 mb-1" />

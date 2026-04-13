@@ -42,7 +42,7 @@ export const personalData: PersonalData = {
   ],
   scrollTitles: [
     "profil",
-    "skill",
+    "skills",
     "projects",
     "jobpro",
     "training"
@@ -314,9 +314,9 @@ export const personalData: PersonalData = {
       year_end: "2025",
       details: [
         "Reconversion professionnelle vers le développement web et mobile, avec une formation intensive de 6 mois en téléprésentiel.",
-        "Apprentissage des fondamentaux du développement web, incluant HTML, CSS, JavaScript, ainsi que les frameworks Vue.js et React pour le front-end, et Node.js pour le back-end.",
+        "Apprentissage des fondamentaux du développement web, incluant HTML, CSS, JavaScript, ainsi que le framework React.js pour le front-end, et Node.js pour le back-end.",
+        "Formation axée sur les bonnes pratiques de développement, la gestion de projet agile et la collaboration en équipe, avec des outils tels que Git et GitHub pour le versioning du code.",
         "Mise en pratique à travers un projet de développement d’une application web complète, intégrant une API REST et une interface utilisateur réactive.",
-        "Formation axée sur les bonnes pratiques de développement, la gestion de projet agile et la collaboration en équipe, avec des outils tels que Git et GitHub pour le versioning du code."
       ]
     }
   ]
