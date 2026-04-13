@@ -259,15 +259,10 @@ export const personalData: PersonalData = {
       year_end: "2024",
        details: [
         "À la suite de ma formation de développeur web et mobile chez O’clock, j’ai rejoint Acteam-IT pour ma première expérience professionnelle, où j’ai pu concrétiser mes acquis en intervenant sur des projets destinés à des clients grands comptes, dans des contextes techniques exigeants.",
-
         "Au sein de l’entreprise, j’interviens aussi bien sur des applications web que mobiles, en assurant leur maintenance, leur évolution et leur bon fonctionnement en production. Mon rôle consiste à diagnostiquer et corriger les anomalies, optimiser les performances et intégrer de nouvelles fonctionnalités en réponse aux besoins métiers.",
-
         "Au fil de mes missions, j’ai développé une approche orientée qualité et fiabilité, avec une attention particulière portée à la robustesse du code, à la performance des applications et à la maintenabilité des projets dans le temps.",
-
         "Suite à une spécialisation en Kotlin, j’ai évolué vers un rôle de référent Android. J’accompagne les équipes sur les problématiques mobiles, encadre un alternant et prends en charge des projets de bout en bout, de la conception jusqu’à la mise en production.",
-
         "J’ai notamment participé à un projet de gestion d’interventions terrain pour un acteur majeur du secteur de l’énergie. Ce projet m’a amené à travailler sur des problématiques concrètes telles que la mise à niveau d’une application Android, l’intégration de fonctionnalités liées aux objets connectés (RFID), la capture et le traitement d’images, ainsi que l’optimisation des performances sur des terminaux mobiles.",
-
         "Enfin, je veille à produire une documentation technique claire et à jour afin de faciliter la maintenance, le partage de connaissances et la pérennité des applications."
       ]
     },
@@ -283,9 +278,9 @@ export const personalData: PersonalData = {
       details: [
         "Accompagnement d’un particulier dans la création de son activité de transport de produits volumineux, en développant une solution pour mettre en relation des clients et des transporteurs.",
         "J’ai commencé par échanger avec le client pour bien comprendre ses besoins et définir les fonctionnalités essentielles. Cela m’a permis de rédiger un cahier des charges clair et de poser les bases d’un MVP, afin de livrer rapidement une première version utilisable.",
-        "J’ai ensuite développé une application mobile cross-platform avec React Native, permettant de gérer les demandes de livraison et la mise en relation entre les utilisateurs.",
+        "J’ai ensuite développé une application mobile cross-platform avec React Native, permettant de gérer les demandes de livraison et la mise en relation entre les utilisateurs et les livreurs. J’ai intégré des fonctionnalités de géolocalisation pour faciliter la recherche de transporteurs à proximité, ainsi que des notifications pour informer les utilisateurs de l’état de leurs demandes.",
         "Rôle de développeur principal sur le projet, avec un développeur junior que j’ai accompagné sur les aspects techniques et l’avancement des tâches.",
-        "Mise en place d’une API REST avec Node.js pour gérer les utilisateurs, les commandes et le suivi des livraisons. ainsi que la conception d’une base de données MongoDB pour organiser et stocker les informations liées à l’application.",
+        "Mise en place d’une API REST avec Node.js pour gérer les utilisateurs et les livreurs, les commandes et le suivi des livraisons. ainsi que la conception d’une base de données MongoDB pour organiser et stocker les informations liées à l’application.",
         "Réalisation des tests, correction des bugs et livraison d’une application fonctionnelle, en accord avec les attentes du client."
       ]
     }
@@ -301,10 +296,11 @@ export const personalData: PersonalData = {
       month_end: "01",
       year_end: "2025",
       details: [
-        "Formation axée sur le développement web full‐stack avec JavaScript.",
-        "Utilisation des technologies React (Front‐End), NestJS et Prisma ORM (Back‐End) avec base de        données SQL.",
+        "Formation intensive de 6 mois axés sur la conception et le développement d’applications, avec une approche pratique et orientée projet.",
+        "Utilisation des technologies React (Front‐End) avec tailwindCSS, NestJS et Prisma ORM (Back‐End) avec base de données SQL.",
         "Introduction aux principes fondamentaux du DevOps via Docker, AWS, et GitLab CI/CD.",
-        "Mise en œuvre de tests automatisés avec Cypress (E2E) et Jest (tests unitaires)."
+        "Mise en œuvre de tests automatisés avec Cypress (E2E) et Jest (tests unitaires).",
+        "Réalisation d’un projet de développement d’une application web complète, intégrant une API REST et une interface utilisateur réactive, avec une attention particulière portée à la qualité du code, à la performance et à la maintenabilité.",
       ]
     },
     {
@@ -317,10 +313,10 @@ export const personalData: PersonalData = {
       month_end: "01",
       year_end: "2025",
       details: [
-        "Formation axée sur le développement web full‐stack avec JavaScript.",
-        "Utilisation des technologies React (Front‐End), NestJS et Prisma ORM (Back‐End) avec base de        données SQL.",
-        "Introduction aux principes fondamentaux du DevOps via Docker, AWS, et GitLab CI/CD.",
-        "Mise en œuvre de tests automatisés avec Cypress (E2E) et Jest (tests unitaires)."
+        "Reconversion professionnelle vers le développement web et mobile, avec une formation intensive de 6 mois en téléprésentiel.",
+        "Apprentissage des fondamentaux du développement web, incluant HTML, CSS, JavaScript, ainsi que les frameworks Vue.js et React pour le front-end, et Node.js pour le back-end.",
+        "Mise en pratique à travers un projet de développement d’une application web complète, intégrant une API REST et une interface utilisateur réactive.",
+        "Formation axée sur les bonnes pratiques de développement, la gestion de projet agile et la collaboration en équipe, avec des outils tels que Git et GitHub pour le versioning du code."
       ]
     }
   ]
