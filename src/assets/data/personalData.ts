@@ -47,11 +47,13 @@ export const personalData: PersonalData = {
     "jobpro",
     "training"
   ],
-  aboutMe: {
-    p1: "Je suis un développeur web avec une passion pour la création de solutions innovantes. J'ai une expérience de plus de 5 ans dans le <span style='color: blue;'>développement web et mobile</span>. J'ai travaillé sur de nombreux projets, allant de petites applications web à des applications mobiles complexes.",
-    p2: "Je suis passionné par les nouvelles technologies et j'aime apprendre de nouvelles choses. Je suis toujours à la recherche de nouveaux défis et de nouvelles opportunités pour améliorer mes compétences.",
-    p3: "Je suis un développeur web avec une passion pour la création de solutions innovantes. J'ai une expérience de plus de 5 ans dans le développement web et mobile. J'ai travaillé sur de nombreux projets, allant de petites applications web à des applications mobiles complexes."
-  },
+  aboutMe: [
+    "Bonjour 👋, Je suis <span style='font-weight:bold;'>Guillaume Ersent</span> et bienvenue sur mon profil. Je suis <span style='font-weight:bold;'>développeur web et mobile fullstack</span>, spécialisé dans la conception et le développement de solutions adaptées aux besoins des utilisateurs.",
+    "<a href='#training' style='font-weight:bold; color:#095797;'>Mes formations</a>, associées à <a href='#jobpro' style='font-weight:bold; color:#095797;'>mon expérience professionnelle</a>, m’ont permis d’acquérir des bases solides en développement. Cette double approche me permet aujourd’hui d’aborder un projet dans sa globalité jusqu’à sa mise en production, en intégrant des pratiques essentielles comme les tests unitaires et le DevOps.",
+    "Mais au-delà de la technique, mes expériences dans le commerce m’ont appris à écouter et comprendre les besoins clients afin de les traduire en solutions claires, efficaces et centrées utilisateur.",
+    "Curieux de nature, je reste en veille constante sur les nouvelles technologies du web et du mobile.",
+    "Rigoureux et impliqué, je m’attache à mener chaque projet à son terme avec exigence, en respectant les délais et les standards de qualité attendus.",
+  ],
   socialLinks: {
     linkedin: {
       link: "https://www.linkedin.com/in/guillaume-ersent",

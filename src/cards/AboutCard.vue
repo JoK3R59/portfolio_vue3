@@ -28,16 +28,11 @@
           Qui suis-je ?
         </h2>
         <hr />
-        <div class="card-content">
-          <p class="text-base">
-          {{ props.aboutMe.p1 }}
-          </p>
-          <p class="text-base">
-            {{ props.aboutMe.p2 }}
-          </p>
-          <p class="text-base">
-            {{ props.aboutMe.p3 }}
-          </p>
+        <div v-for="(value, index) in props.aboutMe" :key="index"
+          class="card-content"
+        >
+          <p class="text-base content-about"
+            v-html="value" />
         </div>
       </div>
 
@@ -67,7 +62,13 @@
     border-bottom: 0.1rem solid black;
     padding: 1rem;
   }
+  .card-left h2 {
+    margin-bottom: 1rem;
+  }
   .card-right {
     padding: 1rem;
+  }
+  .content-about {
+    margin-top: 1rem;
   }
 </style>

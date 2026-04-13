@@ -23,12 +23,6 @@ export interface Tools {
   svg: string;
 }
 
-export interface AboutMe {
-  p1: string;
-  p2: string;
-  p3: string;
-}
-
 export interface SocialLinks {
   linkedin: SocialLink;
   github: SocialLink;
@@ -82,7 +76,7 @@ export interface Profil {
 
 export interface PersonalData {
   profil: Profil;
-  aboutMe: AboutMe;
+  aboutMe: string[];
   socialLinks: SocialLinks;
   sections: Sections;
   skills: Record<string, Skill>; /** Compétences indexées par identifiant technique. Chaque valeur décrit le nom, niveau et icône. */
