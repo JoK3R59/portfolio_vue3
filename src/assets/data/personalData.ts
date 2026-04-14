@@ -5,7 +5,7 @@ export const personalData: PersonalData = {
     name: "Guillaume Ersent",
     yearOfBirth: 1990,
     sexe: "Homme",
-    jobTitle: "Développeur",
+    jobTitle: "Développeur Fullstack",
     subTitle: "Web & Mobile",
     address: "Lille et ses alentours – FRANCE",
     phone: "",

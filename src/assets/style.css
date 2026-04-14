@@ -1,3 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@config "../../tailwind.config.ts";
+
 /* SVG STYLE */
 .navbar_section {
   a {
@@ -24,7 +28,7 @@
     height: 5rem;
   }
   .profil-section {
-    background-color: darkblue;
+    /* background-color: darkblue; */
     /* height: 25rem; */
   }
   /* .about-section {

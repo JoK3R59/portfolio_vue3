@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { computed } from 'vue';
   import BorderContent from '@/component/borderContent.vue';
+  import SvgConfig from '@/component/svgConfig.vue';
   import { calculateAge } from '@/utils';
   import type { PersonalData, InfoItems } from "@/utils/types";
 
@@ -24,9 +25,12 @@
   <div class="about-section">
     <BorderContent>
       <div class="card-body card-left">
-        <h2 class="card-title font-bold text-3xl">
-          Qui suis-je ?
-        </h2>
+        <div class="flex flex-auto items-center">
+          <SvgConfig name="user" class="w-10 h-10" />
+          <h2 class="self-center font-bold text-xl">
+            Qui suis-je ?
+          </h2>
+        </div>
         <hr />
         <div v-for="(value, index) in props.aboutMe" :key="index"
           class="card-content"
@@ -37,7 +41,7 @@
       </div>
 
       <div class="card-body card-right">
-        <h2 class="card-title font-bold text-3xl">
+        <h2 class="card-title font-bold text-xl">
           Informations personnelles
         </h2>
         <hr />

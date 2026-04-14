@@ -16,18 +16,18 @@
 <template>
   <section class="profil-section hero">
     <div class="hero-overlay"></div>
-    <div class="hero-content text-neutral-content text-center">
-      <div class="profil-content w-40">
+    <div class="w-screen h-90 text-center">
+      <div class="px-6">
         <div class="header-image pulse">
           <a href="https://www.linkedin.com/in/guillaume-ersent/" target="_blank">
             <img src="/src/assets/images/profil.jpg" alt="Photo de Profil" class="rounded-full" />
           </a>
         </div>
 
-        <h1 class="mb-5 text-xl font-bold">{{ props.name }}</h1>
+        <h1 class="mb-2 text-2xl font-bold">{{ props.name }}</h1>
         <hr />
-        <p class="mb-5 text-3xl font-semibold">{{ props.jobTitle }}</p>
-        <p class="mb-5 text-3xl font-semibold">{{ props.subTitle }}</p>
+        <p class="text-lg font-semibold">{{ props.jobTitle }}</p>
+        <p class="mb-2 text-lg font-semibold">{{ props.subTitle }}</p>
         <button class="btn bg-[#095797] text-lg"
           data-aos="zoom-in">
           Mon CV
@@ -49,7 +49,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 50vh;
+    height: 70vh;
   }
   .header-image {
     margin: auto auto 1rem auto;
@@ -58,21 +58,21 @@
     height: 140px;
     width: 140px;
   }
-  .profil-content h1, p {
+  /* .profil-content h1, p {
     margin-bottom: 0.5rem;
-  }
+  } */
   .social-links {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 25vh;
+    top: 35vh;
     z-index: 900;
   }
-  hr {
+  /* hr {
     width: 100%;
     margin: 0.5rem auto;
     border: 2px solid transparent;
-  }
+  } */
   .pulse {
     border-radius: 50%;
     box-shadow: 0 0 0 #095797;
