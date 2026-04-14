@@ -16,18 +16,20 @@
 <template>
   <section class="profil-section hero">
     <div class="hero-overlay"></div>
-    <div class="w-screen h-90 text-center">
+    <div class="w-screen h-100 text-center">
       <div class="px-6">
+        <!-- Profile Image -->
         <div class="header-image pulse">
           <a href="https://www.linkedin.com/in/guillaume-ersent/" target="_blank">
             <img src="/src/assets/images/profil.jpg" alt="Photo de Profil" class="rounded-full" />
           </a>
         </div>
 
-        <h1 class="mb-2 text-2xl font-bold">{{ props.name }}</h1>
+        <!-- Profile Information -->
+        <h1 class="mb-4 text-3xl font-bold">{{ props.name }}</h1>
         <hr />
-        <p class="text-lg font-semibold">{{ props.jobTitle }}</p>
-        <p class="mb-2 text-lg font-semibold">{{ props.subTitle }}</p>
+        <p class="my-2 text-lg font-semibold">{{ props.jobTitle }}</p>
+        <p class="mb-8 text-lg font-semibold">{{ props.subTitle }}</p>
         <button class="btn bg-[#095797] text-lg"
           data-aos="zoom-in">
           Mon CV
@@ -35,6 +37,7 @@
       </div>
     </div>
 
+    <!-- Social Links -->
     <div class="social-links">
       <SocialsLink
         :linkedin="props.socialLinks.linkedin"
@@ -52,15 +55,12 @@
     height: 70vh;
   }
   .header-image {
-    margin: auto auto 1rem auto;
+    margin: auto auto 2rem auto;
     border-radius: 50%;
     cursor: pointer;
     height: 140px;
     width: 140px;
   }
-  /* .profil-content h1, p {
-    margin-bottom: 0.5rem;
-  } */
   .social-links {
     display: flex;
     justify-content: center;
@@ -68,11 +68,6 @@
     top: 35vh;
     z-index: 900;
   }
-  /* hr {
-    width: 100%;
-    margin: 0.5rem auto;
-    border: 2px solid transparent;
-  } */
   .pulse {
     border-radius: 50%;
     box-shadow: 0 0 0 #095797;

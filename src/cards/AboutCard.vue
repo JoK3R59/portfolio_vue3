@@ -16,7 +16,7 @@
     { label: 'Email', value: props.profil.email },
     // { label: 'Téléphone', value: props.profil.phone },
     { label: 'Adresse', value: props.profil.address },
-    { label: 'Langages', value: props.profil.langage }, 
+    { label: 'Langues', value: props.profil.langage }, 
     // { label: 'Travaille chez', value: props.profil.job },
   ]);
 </script>
@@ -24,10 +24,11 @@
 <template>
   <div class="about-section">
     <BorderContent>
+      <!-- About Me Section -->
       <div class="card-body card-left">
         <div class="flex flex-auto items-center">
-          <SvgConfig name="user" class="w-10 h-10" />
-          <h2 class="self-center font-bold text-xl">
+          <SvgConfig name="user" class="w-10 h-10 mr-2" />
+          <h2 class="font-extrabold text-lg">
             Qui suis-je ?
           </h2>
         </div>
@@ -40,18 +41,22 @@
         </div>
       </div>
 
+      <!-- Personal Information Section -->
       <div class="card-body card-right">
-        <h2 class="card-title font-bold text-xl">
-          Informations personnelles
-        </h2>
+        <div class="flex flex-auto items-center">
+          <SvgConfig name="user-id" class="w-10 h-10 mr-2" />
+          <h2 class="font-extrabold text-lg">
+            Informations personnelles
+          </h2>
+        </div>
         <hr />
         <div v-for="(info, index) in informations" :key="index">
-          <div class="flex justify-evenly items-center"
+          <div class="flex flex-col"
             :style="{ marginTop: index > 0 ? '1rem' : '0' }">
-            <p class="w-1/3 text-base text-gray-300 uppercase font-bold">
+            <p class="text-base text-white uppercase font-bold">
               {{ info.label }} :
             </p>
-            <p class="w-2/3 text-base text-gray-200">
+            <p class="text-base text-gray-200">
               {{ info.value }}
             </p>
           </div>
@@ -62,13 +67,6 @@
 </template>
 
 <style scoped>
-  .card-left {
-    border-bottom: 0.1rem solid black;
-    padding: 1rem;
-  }
-  .card-left h2 {
-    margin-bottom: 1rem;
-  }
   .card-right {
     padding: 1rem;
   }
