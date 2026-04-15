@@ -48,7 +48,7 @@ export const personalData: PersonalData = {
     "training"
   ],
   aboutMe: [
-    "Bonjour 👋, Je suis <span style='font-weight:bold;'>Guillaume Ersent</span> et bienvenue sur mon profil. Je suis <span style='font-weight:bold;'>développeur web et mobile fullstack</span>, spécialisé dans la conception et le développement de solutions adaptées aux besoins des utilisateurs.",
+    "Bonjour 👋, Je suis <span style='font-weight:bold;'>Guillaume Ersent</span> et bienvenue sur mon profil. <span style='font-weight:bold;'>Développeur web et mobile fullstack</span>, spécialisé dans la conception et le développement de solutions adaptées aux besoins des utilisateurs.",
     "<a href='#training' style='font-weight:bold; color:#0077B5;'>Mes formations</a>, associées à <a href='#jobpro' style='font-weight:bold; color:#0077B5;'>mon expérience professionnelle</a>, m’ont permis d’acquérir des bases solides en développement. Cette double approche me permet aujourd’hui d’aborder un projet dans sa globalité jusqu’à sa mise en production, en intégrant des pratiques essentielles comme les tests unitaires et le DevOps.",
     "Mais au-delà de la technique, mes expériences dans le commerce m’ont appris à écouter et comprendre les besoins clients afin de les traduire en solutions claires, efficaces et centrées utilisateur.",
     "Curieux de nature, je reste en veille constante sur les nouvelles technologies du web et du mobile.",

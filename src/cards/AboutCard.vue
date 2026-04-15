@@ -51,8 +51,7 @@
         </div>
         <hr />
         <div v-for="(info, index) in informations" :key="index">
-          <div class="flex flex-col"
-            :style="{ marginTop: index > 0 ? '1rem' : '0' }">
+          <div class="flex flex-col my-1">
             <p class="text-base text-white uppercase font-bold">
               {{ info.label }} :
             </p>
