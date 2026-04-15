@@ -66,6 +66,9 @@
 </template>
 
 <style scoped>
+  .card-left {
+    padding: 1rem;
+  }
   .card-right {
     padding: 1rem;
   }

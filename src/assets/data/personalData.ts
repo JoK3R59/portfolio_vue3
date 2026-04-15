@@ -162,47 +162,56 @@ export const personalData: PersonalData = {
     {
       name: 'linux',
       label: 'Linux',
-      svg: 'linux'
+      svg: 'tools/linux',
+      desc: "Je déploie mes travaux web sur des serveurs sous Linux (Debian)",
     },
     {
       name: 'micro-services',
       label: 'Micro-Services',
-      svg: 'sitemap'
+      svg: 'tools/sitemap',
+      desc: "J'organise mes applications Web en micro-services : les API(s) communiquent avec l'interface pour la servir à chaque demande des utilisateurs. Tout est séparé en galaxie de services.",
     },
     {
       name: 'git',
       label: 'Git',
-      svg: 'git'
+      svg: 'tools/git',
+      desc: "J'utilise Git pour le version control de mes projets.",
     },
     {
       name: 'git-branch',
       label: 'Git-Branch',
-      svg: 'branch'
+      svg: 'tools/branch',
+      desc: "Pour tous mes projets, je mets en place plusieurs environnements (une production couplée à une pré-production au minimum) grâce au système de branches de Git",
     },
     {
       name: 'github',
       label: 'Github',
-      svg: 'github'
+      svg: 'github',
+      desc: "Je travaille sur GitHub et utilise GitHub Actions comme outil de CI/CD pour tester le code et déployer les productions.",
     },
     {
       name: 'nodejs',
       label: 'Node.js',
-      svg: 'nodejs'
+      svg: 'tools/nodejs',
+      desc: "NodeJS est un environnement indispensable pour tous mes projets en Typescript. Je l'utilise à la fois pour mes APIs et mes interfaces web.",
     },
     {
       name: 'framework',
       label: 'Frameworks',
-      svg: 'framework'
+      svg: 'css',
+      desc: "Je maîtrise plusieurs frameworks de design comme Bootstrap, tailwindCSS pour parfaire mes interfaces.",
     },
     {
       name: 'check-list',
       label: 'Méthodologies',
-      svg: 'list-check'
+      svg: 'tools/list-check',
+      desc: "Je m'efforce d'écrire le maximum de tests unitaires et E2E sur mes projets afin de prouver leur robustesse.",
     },
     {
       name: 'docker',
       label: 'Docker',
-      svg: 'docker'
+      svg: 'tools/docker',
+      desc: "Je déploie mes applications dans des conteneurs Docker pour garantir une portabilité et une sécurité maximale.",
     }
   ],
   projects: [

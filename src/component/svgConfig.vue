@@ -12,7 +12,7 @@ import { computed } from 'vue';
   )
 
 // Import automatique des SVG comme composants
-  const icons = import.meta.glob('@/assets/svg/*.svg', {
+  const icons = import.meta.glob(['@/assets/svg/*.svg','@/assets/svg/tools/*.svg'], {
     eager: true,
     import: 'default'
   });

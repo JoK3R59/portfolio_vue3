@@ -21,6 +21,7 @@ export interface Tools {
   name: string;
   label: string;
   svg: string;
+  desc: string;
 }
 
 export interface SocialLinks {
