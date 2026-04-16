@@ -13,6 +13,14 @@ dist
 dist-ssr
 coverage
 *.local
+CLAUDE.md
+.dockerignore
+
+# Images
+*.png
+*.jpg
+*.svg
+*.webp
 
 # Editor directories and files
 .vscode/*
