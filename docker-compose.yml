@@ -1,0 +1,10 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio_app
+    ports:
+      # - "8080:80" # localhost 
+      - "127.0.0.1:8080:80" # localhost with Nginx
+    restart: unless-stopped

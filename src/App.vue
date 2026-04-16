@@ -1,34 +1,57 @@
 <script setup lang="ts">
-  import './assets/reset.css'
-  // Import Sections
-  import Profil from './sections/profil.vue';
-  import About from './sections/About.vue';
-  import Skill from './sections/Skill.vue';
-  import Project from './sections/Project.vue';
-  import Experience from './sections/Experience.vue';
-  import Education from './sections/Education.vue';
-  import Footer from './sections/Footer.vue';
-  import Nav_bar from './sections/Nav_bar.vue';
+  // Import Cards
+  import ProfilCard from '@/cards/ProfilCard.vue';
+  import AboutCard from '@/cards/AboutCard.vue';
+  import SkillCard from '@/cards/SkillCard.vue';
+  import ProjectCard from '@/cards/ProjectCard.vue';
+  import ExperienceCard from '@/cards/ExperienceCard.vue';
+  import EducationCard from '@/cards/EducationCard.vue';
+  import Footer from '@/cards/FooterCard.vue';
+  import NavBar from '@/cards/NavBar.vue';
+  // Import Data
+  import { personalData } from '@/assets/data/personalData';
 </script>
 
 <template>
-  <Nav_bar />
-  <Profil />
+  <NavBar 
+    :sectionTitles = "personalData.sectionTitles"
+    :scrollTitles = "personalData.scrollTitles" />
+  <ProfilCard
+    :name="personalData.profil.name"
+    :jobTitle="personalData.profil.jobTitle"
+    :subTitle="personalData.profil.subTitle"
+    :socialLinks="personalData.socialLinks" />
   <div id="portfolio_content">
-    <About />
-    <Skill />
-    <Project />
-    <Experience />
-    <Education />
+    <AboutCard 
+      :profil="personalData.profil"
+      :aboutMe="personalData.aboutMe" />
+    <SkillCard 
+      :skills="personalData.skills"
+      :tools="personalData.tools"
+      :sectionTitles="personalData.sectionTitles[1]!" />
+    <ProjectCard 
+      :projects="personalData.projects"
+      :sectionTitles="personalData.sectionTitles[2]!" />
+    <ExperienceCard 
+      :sectionTitles="personalData.sectionTitles[3]!"
+      :experiences="personalData.experiences" />
+    <EducationCard 
+      :sectionTitles="personalData.sectionTitles[4]!"
+      :educations="personalData.educations" />
   </div>
-  <Footer />
+  <Footer 
+    :linkedin="personalData.socialLinks.linkedin"
+    :github="personalData.socialLinks.github" />
 </template>
 
 <style>
-  #app {
-    background-color: bisque;
-  }
   #portfolio_content {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
+  }
+  @media (min-width: 1200px) {
+    /* PC standard */
+    #portfolio_content {
+      padding: 2rem 4rem;
+    }
   }
 </style>
