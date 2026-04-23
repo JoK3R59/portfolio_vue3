@@ -17,6 +17,8 @@ jobs:
     permissions:
       contents: read
       packages: write
+    outputs:
+      image_tag: ${{ steps.meta.outputs.version }}
 
     steps:
       - name: Checkout
@@ -63,9 +65,10 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            IMAGE=$(echo "ghcr.io/${{ github.repository }}:latest" | tr '[:upper:]' '[:lower:]')
-            echo ${{ secrets.GITHUB_TOKEN }} | sudo docker login ghcr.io -u ${{ github.actor }} --password-stdin
+            IMAGE=$(echo "ghcr.io/${{ github.repository }}:${{ needs.build-and-push.outputs.image_tag }}" | tr '[:upper:]' '[:lower:]')
+            echo "${{ secrets.GHCR_PULL_TOKEN }}" | sudo docker login ghcr.io -u ${{ github.actor }} --password-stdin
             sudo docker pull $IMAGE
+            sudo docker logout ghcr.io
             sudo docker stop portfolio_app || true
             sudo docker rm portfolio_app || true
             sudo docker run -d \
@@ -73,3 +76,5 @@ jobs:
               --restart unless-stopped \
               -p 127.0.0.1:8080:80 \
               $IMAGE
+            sleep 3 && curl -f http://127.0.0.1:8080 || (echo "App is not responding" && exit 1)
+            sudo docker image prune -af --filter "until=168h"
