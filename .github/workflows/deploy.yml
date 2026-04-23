@@ -1,0 +1,75 @@
+name: Build & Deploy
+
+# Se déclenche uniquement lors d'un push sur master (merge dev → master)
+on:
+  push:
+    branches:
+      - master
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build-and-push:
+    name: Build & Push Docker image
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }} 
+
+      - name: Extract metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=sha,prefix=sha-   # Tag par commit ex: sha-a1b2c3d (utile pour rollback)
+            type=raw,value=latest  # Tag "latest" pour le déploiement courant
+
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+  deploy:
+    name: Deploy to VPS
+    runs-on: ubuntu-latest
+    needs: build-and-push
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            # Connexion au registry depuis le VPS
+            echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+            # Récupère la dernière image buildée
+            docker pull ghcr.io/${{ github.repository }}:latest
+            # Arrêt et suppression du container existant (|| true évite l'erreur si absent)
+            docker stop portfolio || true
+            docker rm portfolio || true
+            # Redémarre le container avec la nouvelle image
+            docker run -d \
+              --name portfolio \
+              --restart unless-stopped \
+              -p 80:80 \
+              ghcr.io/${{ github.repository }}:latest
