@@ -23,7 +23,10 @@ import BorderContent from '@/component/borderContent.vue';
 <template>
   <BorderContent>
     <div class="card bg-[#3B424C] card-md w-full">
-      <div class="color-content">
+      <div class="color-content"
+        data-aos="fade-right"
+        data-aos-offset="80"
+      >
         <div class="card view-content">
           <a
             :href="props.experiences.website == '' ? '#' : props.experiences.website"
@@ -51,7 +54,10 @@ import BorderContent from '@/component/borderContent.vue';
         </div>
       </div>
 
-      <div class="card view-content">
+      <div class="card view-content"
+        data-aos="zoom-in"
+        data-aos-offset="80"
+      >
         <div :class="inverseFlexDirection()">
           <h2 v-if="props.experiences.company != 'Freelance'">
             {{ props.experiences.company }}

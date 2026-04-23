@@ -5,17 +5,18 @@
     value: number;
     progress: number;
     color: string;
-    size?: 'sm' | 'md' | 'lg';
   }>();
 </script>
 
 <template>
   <progress
     class="progress w-full transition-all duration-500"
-    :class="[`progress-${props.size}`]"
     :style="`color: ${props.color};`"
     :value="props.value"
     max="100"
+    data-aos="flip-down"
+    data-aos-duration="1000"
+    data-aos-offset="50"
   ></progress>
 </template>
 
