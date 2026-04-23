@@ -21,7 +21,7 @@
         <!-- Profile Image -->
         <div class="header-image pulse">
           <a href="https://www.linkedin.com/in/guillaume-ersent/" target="_blank">
-            <img src="/src/assets/images/profil.jpg" alt="Photo de Profil" class="rounded-full" />
+            <img src="@/assets/images/profil.jpg" alt="Photo de Profil" class="rounded-full" />
           </a>
         </div>
 
