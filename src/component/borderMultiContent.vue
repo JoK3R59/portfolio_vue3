@@ -13,6 +13,7 @@
 <template>
   <div class="border_content" 
     :style="backgroundStyle" 
+    data-aos="fade-up"
   >
     <slot />
   </div>
