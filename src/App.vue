@@ -1,16 +1,22 @@
 <script setup lang="ts">
-  // Import Cards
-  import ProfilCard from '@/cards/ProfilCard.vue';
-  import AboutCard from '@/cards/AboutCard.vue';
-  import SkillCard from '@/cards/SkillCard.vue';
-  import ProjectCard from '@/cards/ProjectCard.vue';
-  import ExperienceCard from '@/cards/ExperienceCard.vue';
-  import EducationCard from '@/cards/EducationCard.vue';
-  import Footer from '@/cards/FooterCard.vue';
-  import NavBar from '@/cards/NavBar.vue';
-  // Import Data
-  import { personalData } from '@/assets/data/personalData';
+// Import Cards
+import ProfilCard from '@/cards/ProfilCard.vue';
+import AboutCard from '@/cards/AboutCard.vue';
+import SkillCard from '@/cards/SkillCard.vue';
+import ProjectCard from '@/cards/ProjectCard.vue';
+import ExperienceCard from '@/cards/ExperienceCard.vue';
+import EducationCard from '@/cards/EducationCard.vue';
+import Footer from '@/cards/FooterCard.vue';
+import NavBar from '@/cards/NavBar.vue';
+import AOS from 'aos';
+import { onMounted } from 'vue';
+// Import Data
+import { personalData } from '@/assets/data/personalData';
 
+  // Initialisation de AOS pour les animations au scroll
+  onMounted(() => {
+    AOS.init();
+  });
 </script>
 
 <template>
