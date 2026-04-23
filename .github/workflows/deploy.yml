@@ -27,7 +27,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }} 
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Extract metadata
         id: meta
@@ -35,11 +35,11 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=sha,prefix=sha-   # Tag par commit ex: sha-a1b2c3d (utile pour rollback)
-            type=raw,value=latest  # Tag "latest" pour le déploiement courant
+            type=sha,prefix=sha-
+            type=raw,value=latest
 
       - name: Build and push
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
           push: true
@@ -60,14 +60,10 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            # Connexion au registry depuis le VPS
             echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-            # Récupère la dernière image buildée
             docker pull ghcr.io/${{ github.repository }}:latest
-            # Arrêt et suppression du container existant (|| true évite l'erreur si absent)
             docker stop portfolio || true
             docker rm portfolio || true
-            # Redémarre le container avec la nouvelle image
             docker run -d \
               --name portfolio \
               --restart unless-stopped \
