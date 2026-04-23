@@ -2,6 +2,11 @@
 @plugin "daisyui";
 @config "../../tailwind.config.ts";
 
+/* font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; */
+body,button,input,optgroup,select,textarea {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+}
+
 /* SVG STYLE */
 .navbar_section {
   a {

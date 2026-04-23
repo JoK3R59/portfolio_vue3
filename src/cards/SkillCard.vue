@@ -85,7 +85,7 @@ import SvgConfig from '@/component/svgConfig.vue';
       <p>{{ props.sectionTitles.text }}</p>
     </div>
 
-    <BorderContent>
+    <BorderContent type-aos="fade-up">
       <div class="card bg-[#3B424C] ">
         <div class="card-body">
           <div class="skills mb-4">

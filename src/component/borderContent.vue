@@ -1,8 +1,15 @@
 <script setup lang="ts">
+
+  const props = withDefaults(defineProps<{
+    typeAos?: string;
+  }>(), {
+    typeAos: '',
+  });
+
 </script>
 
 <template>
-  <div class="border_content">
+  <div class="border_content" :data-aos="props.typeAos">
     <slot></slot>
   </div>
 </template>
