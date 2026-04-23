@@ -10,6 +10,7 @@
   import NavBar from '@/cards/NavBar.vue';
   // Import Data
   import { personalData } from '@/assets/data/personalData';
+
 </script>
 
 <template>

@@ -11,7 +11,7 @@ export const personalData: PersonalData = {
     phone: "",
     langage: "Français, Anglais",
     job: "",
-    email: "guillaume@example.com",
+    email: "ers.guillaume@live.fr",
   },
   sectionTitles: [
     {
