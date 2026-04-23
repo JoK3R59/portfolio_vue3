@@ -16,12 +16,6 @@ coverage
 CLAUDE.md
 .dockerignore
 
-# Images
-*.png
-*.jpg
-*.svg
-*.webp
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
