@@ -1,13 +1,15 @@
 # Étape 1 : build du projet Vue/Vite
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
+
+RUN corepack enable && corepack prepare pnpm@10.33.1 --activate
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
 
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
 # Étape 2 : serveur Nginx pour servir les fichiers statiques
 FROM nginx:alpine
