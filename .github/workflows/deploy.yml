@@ -64,11 +64,11 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             IMAGE=$(echo "ghcr.io/${{ github.repository }}:latest" | tr '[:upper:]' '[:lower:]')
-            echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-            docker pull $IMAGE
-            docker stop portfolio || true
-            docker rm portfolio || true
-            docker run -d \
+            echo ${{ secrets.GITHUB_TOKEN }} | sudo docker login ghcr.io -u ${{ github.actor }} --password-stdin
+            sudo docker pull $IMAGE
+            sudo docker stop portfolio || true
+            sudo docker rm portfolio || true
+            sudo docker run -d \
               --name portfolio \
               --restart unless-stopped \
               -p 80:80 \
