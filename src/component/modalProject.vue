@@ -37,7 +37,7 @@ import type { Project } from '@/utils/types';
     <dialog ref="dialog" class="modal">
       <div class="modal-box w-11/12 max-w-5xl">
         <img :src="getImage()" alt="Image du projet"
-          class="w-full h-64 object-contain rounded-lg" 
+          class="w-full h-auto object-contain rounded-lg mb-4" 
         />
         <h2 class="text-lg font-bold mb-2">
           {{ props.project.title }}
@@ -53,9 +53,9 @@ import type { Project } from '@/utils/types';
               class="btn btn-link" 
               @click="openLink()"
             >
-              Ouvrir
+              Visiter le lien
             </button>
-            <button class="btn">Close</button>
+            <button class="btn">Fermer</button>
           </form>
         </div>
       </div>

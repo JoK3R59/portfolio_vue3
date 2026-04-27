@@ -216,7 +216,7 @@ export const personalData: PersonalData = {
   ],
   projects: [
     {
-      title: "Portfolio",
+      title: " Mon Portfolio",
       description: "Présentation de mes compétences et de mes projets récents.",
       link: "",
       image: "Screenshot"

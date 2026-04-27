@@ -13,7 +13,6 @@ import { onMounted } from 'vue';
 // Import Data
 import { personalData } from '@/assets/data/personalData';
 
-  // Initialisation de AOS pour les animations au scroll
   onMounted(() => {
     AOS.init();
   });
