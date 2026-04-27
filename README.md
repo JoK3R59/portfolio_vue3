@@ -35,11 +35,17 @@ Portfolio single-page présentant mon parcours, mes compétences techniques et m
 src/
 ├── assets/
 │   ├── data/personalData.ts   # Toutes les données du portfolio
-│   └── svg/                   # Icônes SVG
+│   ├── svg/                   # Icônes SVG (importés via vite-svg-loader)
+│   ├── logos/                 # Logos entreprises (webp)
+│   ├── images/                # Photo de profil, captures d'écran
+│   ├── background images/     # Fonds de section
+│   ├── reset.css              # Reset CSS global
+│   └── style.css              # Styles globaux
 ├── cards/                     # Sections de la page (Profil, Skills, Projets…)
 ├── component/                 # Composants réutilisables
 └── utils/
-    └── types.ts               # Types TypeScript
+    ├── types.ts               # Types TypeScript (interface PersonalData…)
+    └── index.ts               # Utilitaires partagés
 ```
 
 > Pour modifier le contenu du portfolio, un seul fichier à éditer : `src/assets/data/personalData.ts`
@@ -49,14 +55,18 @@ src/
 ## Démarrage
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev          # localhost
+pnpm dev:host     # exposé sur le réseau
 ```
 
 ```bash
 # Production
-npm run build
-npm run preview
+pnpm build        # type-check + build (parallèle)
+pnpm build-only   # build Vite uniquement
+pnpm type-check   # vérification TypeScript uniquement
+pnpm lint         # oxlint puis eslint (auto-fix)
+pnpm preview
 ```
 
 ```bash
@@ -64,7 +74,7 @@ npm run preview
 docker compose up --build
 ```
 
-Node.js ≥ 20.19.0 requis.
+Node.js `^20.19.0 || >=22.12.0` requis. pnpm `10.33.1` requis (`corepack enable`).
 
 ---
 
@@ -75,6 +85,18 @@ Node.js ≥ 20.19.0 requis.
 - **Projets** — Portfolio de réalisations
 - **Expériences** — Parcours professionnel
 - **Formations** — Diplômes et certifications
+
+---
+
+## CI/CD
+
+Le pipeline GitHub Actions se déclenche automatiquement sur chaque push sur `master` :
+
+1. **Build** — compile le projet Vue/Vite via Docker (`node:22-alpine` + `pnpm`)
+2. **Push** — pousse l'image vers GitHub Container Registry (`ghcr.io`)
+3. **Deploy** — connexion SSH au VPS, pull de l'image, redémarrage du conteneur `portfolio_app` sur le port `8080`
+
+> Les secrets requis (`SSH_HOST`, `SSH_USER`, `SSH_KEY`, `SSH_PORT`, `GHCR_PULL_TOKEN`).
 
 ---
 
