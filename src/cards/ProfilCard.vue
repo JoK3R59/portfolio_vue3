@@ -48,7 +48,7 @@
 
 <style scoped>
   .profil-section {
-    background-image: url('@/assets/images/backgroundv3.jpg');
+    background-image: url('@/assets/images/background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
