@@ -6,7 +6,7 @@
   }>();
 
   const backgroundStyle = computed(() => ({
-    backgroundImage: `url(${new URL(`../assets/images/${props.image}.png`, import.meta.url).href})`
+    backgroundImage: `url(${new URL(`../assets/images/${props.image}.webp`, import.meta.url).href})`
   }));
 </script>
 

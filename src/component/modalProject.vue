@@ -20,6 +20,10 @@ import type { Project } from '@/utils/types';
       window.open( props.project.link, '_blank' );
     }
   }
+
+  const getImage = () => {
+    return new URL(`../assets/images/${props.project.image}.webp`, import.meta.url).href;
+  };
 </script>
 
 <template>
@@ -28,15 +32,24 @@ import type { Project } from '@/utils/types';
       {{ props.project.title }}
     </span>
   </button>
-  <!-- Teleport évite le flash visuel à la fermeture en sortant le dialog du flux DOM parent -->
+
   <Teleport to="body"> 
     <dialog ref="dialog" class="modal">
       <div class="modal-box w-11/12 max-w-5xl">
-        <h2>{{ props.project.title }}</h2>
-        <p>{{ props.project.description }}</p>
+        <img :src="getImage()" alt="Image du projet"
+          class="w-full h-64 object-contain rounded-lg" 
+        />
+        <h2 class="text-lg font-bold mb-2">
+          {{ props.project.title }}
+        </h2>
+
+        <p class="text-sm font-light">
+          {{ props.project.description }}
+        </p>
+
         <div class="modal-action">
           <form method="dialog">
-            <button v-if="props.project.link != ''"
+            <button v-if=" props.project.link != '' "
               class="btn btn-link" 
               @click="openLink()"
             >
@@ -46,6 +59,10 @@ import type { Project } from '@/utils/types';
           </form>
         </div>
       </div>
+
+      <form method="dialog" class="modal-backdrop backdrop-blur-sm">
+        <button>close</button>
+      </form>
     </dialog>
   </Teleport>
 </template>
