@@ -14,10 +14,7 @@ import BorderContent from '@/component/borderContent.vue';
       backgroundImage: `url(${new URL(`../assets/logos/${image}.webp`, import.meta.url).href})`
     };
   }
-
-  function inverseFlexDirection() {
-    return props.activeSchool ? 'flex flex-col-reverse' : 'flex flex-col';
-}
+  
 </script>
 
 <template>
@@ -58,20 +55,24 @@ import BorderContent from '@/component/borderContent.vue';
         data-aos="zoom-in"
         data-aos-offset="80"
       >
-        <div :class="inverseFlexDirection()">
-          <h2 v-if="props.experiences.company != 'Freelance'">
-            {{ props.experiences.company }}
+        <div >
+          <h2 
+            class="text-lg uppercase font-bold"
+          >
+            {{ props.experiences.title }}
           </h2>
-          <h3>{{ props.experiences.title }}</h3>
+          <h3 v-if="props.experiences.company != 'Freelance'"
+            class="text-sm font-light text-sky-200">
+            {{ props.experiences.company }}
+          </h3>
         </div>
         <hr class="balise-hr"/>
         <p
           v-for="detail, id in props.experiences.details"
           :key="id"
           class="paragraph"
-        >
-          {{ detail }}
-        </p>
+          v-html="detail"
+         />
       </div>
     </div>
   </BorderContent>

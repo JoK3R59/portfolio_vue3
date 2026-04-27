@@ -216,16 +216,16 @@ export const personalData: PersonalData = {
   ],
   projects: [
     {
-      title: "Portfolio",
+      title: " Mon Portfolio",
       description: "Présentation de mes compétences et de mes projets récents.",
       link: "",
       image: "Screenshot"
     },
     {
-      title: "Starcraft : le jeu de plateau (2008)",
-      description: "Outil d'informations lié au jeu de plateau Starcraft.",
+      title: "Starcraft : le jeu de plateau",
+      description: "Outil d'informations lié au jeu de plateau Starcraft de 2008.",
       link: "",
-      image: "Screenshot_1"
+      image: "starcraft"
     },
     {
       title: "Projet <ALT> Formation",
@@ -236,8 +236,8 @@ export const personalData: PersonalData = {
     {
       title: "Decouvrez mes autres projets",
       description: "Et n'hésitez à me suivre sur Github.",
-      link: "",
-      image: "Screenshot_3"
+      link: "https://github.com/JoK3R59",
+      image: "github"
     }
   ],
   experiences: [
