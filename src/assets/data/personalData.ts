@@ -236,7 +236,7 @@ export const personalData: PersonalData = {
     {
       title: "Decouvrez mes autres projets",
       description: "Et n'hésitez à me suivre sur Github.",
-      link: "",
+      link: "https://github.com/JoK3R59",
       image: "Screenshot_3"
     }
   ],

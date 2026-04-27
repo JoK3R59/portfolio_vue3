@@ -3,17 +3,23 @@
 import { useTemplateRef } from 'vue';
 import type { Project } from '@/utils/types';
 
-const props = defineProps<{
-  project: Project;
-}>();
+  const props = defineProps<{
+    project: Project;
+  }>();
 
-// Utilisation de useTemplateRef pour créer une référence au dialog
-const dialogRef = useTemplateRef<HTMLDialogElement>('dialog');
+  // Utilisation de useTemplateRef pour créer une référence au dialog
+  const dialogRef = useTemplateRef<HTMLDialogElement>('dialog');
 
-// Ouvre le modal en utilisant la référence du dialog
-function openModal() {
-  dialogRef.value?.showModal();
-}
+  // Ouvre le modal en utilisant la référence du dialog
+  function openModal() {
+    dialogRef.value?.showModal();
+  }
+
+  function openLink() {
+    if (props.project.link) {
+      window.open( props.project.link, '_blank' );
+    }
+  }
 </script>
 
 <template>
@@ -30,6 +36,12 @@ function openModal() {
         <p>{{ props.project.description }}</p>
         <div class="modal-action">
           <form method="dialog">
+            <button v-if="props.project.link != ''"
+              class="btn btn-link" 
+              @click="openLink()"
+            >
+              Ouvrir
+            </button>
             <button class="btn">Close</button>
           </form>
         </div>
