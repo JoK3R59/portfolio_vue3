@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
     /* border: 2px solid black; */
     box-shadow: 0 2px 15px rgba(156, 156, 156, 0.5);
-    border-radius: 0.5em;
+    border-radius: 0.25rem;
     margin: 1rem 0 2rem 0;
     height: 12rem; 
     width: auto;

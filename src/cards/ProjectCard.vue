@@ -1,8 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-  import type { PersonalData } from '@/utils/types';
-  import BorderMultiContent from '@/component/borderMultiContent.vue';
-  import SvgConfig from '@/component/svgConfig.vue';
+import type { PersonalData } from '@/utils/types';
+import BorderMultiContent from '@/component/borderMultiContent.vue';
+import SvgConfig from '@/component/svgConfig.vue';
+import ModalProject from '@/component/modalProject.vue';
 
   const props = defineProps<{
     projects: PersonalData["projects"];
@@ -18,16 +19,17 @@
     </div>
 
     <BorderMultiContent 
-      v-for="value in props.projects" 
-      :key="value.title" 
+      v-for="(value, id) in props.projects" 
+      :key="`projectId_${id}`" 
       :image="value.image"
     >
-      <div class="card  card-md w-full">
+      <ModalProject :project="value" />
+      <!-- <div class="card card-md w-full">
         <div class="card-body">
           <h2>{{ value.title }}</h2>
           <p>{{ value.description }}</p>
         </div>
-      </div>
+      </div> -->
     </BorderMultiContent>
   </div>
 </template>
