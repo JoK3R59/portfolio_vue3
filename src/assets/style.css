@@ -8,18 +8,6 @@ body,button,input,optgroup,select,textarea {
 }
 
 /* SVG STYLE */
-.navbar_section {
-  a {
-    text-decoration: none;
-    border-radius: 8px;
-    color: #F9FAFB;
-    font-weight: 500;
-    transition: color 0.25s;
-  }
-  a:hover {
-    color: #60A5FA;
-  }
-}
 .svg_title {
   color: #60A5FA;
 }
@@ -27,8 +15,4 @@ body,button,input,optgroup,select,textarea {
 /* BACKGROUND-COLOR DEV */
   #app {
     background-color: #0A0F1F;
-  }
-  .navbar_section {
-    background-color: #0b1120f5;
-    height: 5rem;
   }

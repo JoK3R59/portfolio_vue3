@@ -27,7 +27,7 @@ import { personalData } from '@/assets/data/personalData';
     :jobTitle="personalData.profil.jobTitle"
     :subTitle="personalData.profil.subTitle"
     :socialLinks="personalData.socialLinks" />
-  <div id="portfolio_content" class="p-8">
+  <div id="portfolio_content" class="p-8 lg:p-16">
     <AboutCard 
       :profil="personalData.profil"
       :aboutMe="personalData.aboutMe" />
@@ -49,12 +49,3 @@ import { personalData } from '@/assets/data/personalData';
     :linkedin="personalData.socialLinks.linkedin"
     :github="personalData.socialLinks.github" />
 </template>
-
-<style>
-  @media (min-width: 1200px) {
-    /* PC standard */
-    #portfolio_content {
-      padding: 2rem 4rem;
-    }
-  }
-</style>
