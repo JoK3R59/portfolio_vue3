@@ -16,7 +16,7 @@
 <template>
   <section class="profil-section hero">
     <div class="hero-overlay"></div>
-    <div class="w-screen h-100 text-center">
+    <div class="w-screen h-100 text-center lg:w-dvh">
       <div class="px-6">
         <!-- Profile Image -->
         <div class="header-image pulse">

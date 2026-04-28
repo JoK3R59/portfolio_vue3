@@ -10,7 +10,7 @@ import SvgConfig from '@/component/svgConfig.vue';
 
 <template>
   <div class="navbar_section navbar">
-    <div class="menu menu-horizontal w-full justify-around navbar-center"
+    <div class="menu menu-horizontal w-full max-w-screen justify-around navbar-center"
     >
       <a v-for="(value, id) in props.sectionTitles" :key="id"
         :href="id == 0 ? '#' : '#' + props.scrollTitles[id]"
