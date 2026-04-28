@@ -21,7 +21,8 @@ import { personalData } from '@/assets/data/personalData';
 <template>
   <NavBar 
     :sectionTitles = "personalData.sectionTitles"
-    :scrollTitles = "personalData.scrollTitles" />
+    :scrollTitles = "personalData.scrollTitles"
+    :name = "personalData.profil.name" />
   <ProfilCard
     :name="personalData.profil.name"
     :jobTitle="personalData.profil.jobTitle"

@@ -66,7 +66,7 @@
     justify-content: center;
     position: relative;
     top: 35vh;
-    z-index: 900;
+    z-index: 500;
   }
   .pulse {
     border-radius: 50%;
