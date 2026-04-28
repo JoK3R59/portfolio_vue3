@@ -12,7 +12,7 @@ import { ref } from 'vue';
 
   function onLinkClick(id: number) {
     activeId.value = id;
-    setTimeout(() => { activeId.value = null; }, 400);
+    setTimeout(() => { activeId.value = null; }, 300);
   }
 </script>
 
