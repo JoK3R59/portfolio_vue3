@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AOS from 'aos';
+import { onMounted } from 'vue';
 // Import Cards
 import ProfilCard from '@/cards/ProfilCard.vue';
 import AboutCard from '@/cards/AboutCard.vue';
@@ -8,8 +10,6 @@ import ExperienceCard from '@/cards/ExperienceCard.vue';
 import EducationCard from '@/cards/EducationCard.vue';
 import Footer from '@/cards/FooterCard.vue';
 import NavBar from '@/cards/NavBar.vue';
-import AOS from 'aos';
-import { onMounted } from 'vue';
 // Import Data
 import { personalData } from '@/assets/data/personalData';
 
