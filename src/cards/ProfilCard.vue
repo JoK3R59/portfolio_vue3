@@ -34,8 +34,8 @@ import { ref } from 'vue';
 
         <h1 class="mb-4 text-3xl font-bold">{{ props.name }}</h1>
         <hr />
-        <p class="my-2 text-lg font-semibold">{{ props.jobTitle }}</p>
-        <p class="mb-8 text-lg font-semibold">{{ props.subTitle }}</p>
+        <p class="my-2 text-lg font-semibold uppercase">{{ props.jobTitle }}</p>
+        <p class="mb-8 text-lg font-semibold uppercase">{{ props.subTitle }}</p>
         <div data-aos="zoom-in">
           <a @click="onButtonClick()" href="/cv-guillaume-ersent.pdf" target="_blank"
             :class="{ 'scale-95 translate-y-1.5': isPressed }"
@@ -47,7 +47,6 @@ import { ref } from 'vue';
       </div>
     </div>
 
-    <!-- Social Links -->
     <div class="social-links">
       <SocialsLink
         :linkedin="props.socialLinks.linkedin"
