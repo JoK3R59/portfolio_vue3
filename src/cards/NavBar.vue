@@ -19,7 +19,7 @@ import { ref } from 'vue';
 
 <template>
   <div 
-    class="navbar fixed h-20 bottom-0 left-0 z-900 shadow-[0_2px_5px_rgba(0,0,0,0.1)] bg-[#0b1120] lg:bottom-auto lg:top-0"
+    class="navbar fixed h-20 bottom-0 left-0 z-900 shadow-[0_2px_5px_rgba(0,0,0,0.1)] bg-[#0b1120] lg:bottom-auto lg:top-0 lg:shadow-[0_-3px_20px_rgba(156,156,156,0.5)]"
   >
     <div 
       class="flex flex-row w-full max-w-screen justify-around items-center  lg:justify-between lg:px-8"
