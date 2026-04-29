@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import type { PersonalData } from '@/utils/types';
-  import SvgConfig from '@/component/svgConfig.vue';
-  import TimelineItem from '@/component/TimelineItem.vue';
+import type { PersonalData } from '@/utils/types';
+import SvgConfig from '@/component/svgConfig.vue';
+import TimelineItem from '@/component/TimelineItem.vue';
 
   const props = defineProps<{
     sectionTitles: PersonalData["sectionTitles"][number];
