@@ -27,10 +27,10 @@ import CarouselTools from '@/component/carouselTools.vue';
     <BorderContent type-aos="fade-up">
       <div class="card bg-[#3B424C] ">
         <div class="card-body">
-          <div class="skills mb-4 lg:flex lg:flex-row lg:flex-wrap">
+          <div class="skills mb-4 md:flex md:flex-row md:flex-wrap">
 
             <div v-for="value in props.skills" :key="value.name"
-              class="skill_progress px-2 lg:basis-1/2"
+              class="skill_progress px-2 md:basis-1/2"
             >
               <div class="context_progress flex justify-between items-end">
                 <div class="title_progress flex flex-row items-center w-full">
