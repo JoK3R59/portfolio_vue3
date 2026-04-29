@@ -19,23 +19,23 @@ import BorderContent from '@/component/borderContent.vue';
 
 <template>
   <BorderContent>
-    <div class="card bg-[#3B424C] card-md w-full">
-      <div class="color-content"
+    <div class="w-full md:flex md:flex-row">
+      <div class="bg-[#095797] rounded-t-lg md:rounded-none md:rounded-l-lg md:basis-1/4"
         data-aos="fade-right"
         data-aos-offset="80"
       >
-        <div class="card view-content">
+        <div class="p-4">
           <a
             :href="props.experiences.website == '' ? '#' : props.experiences.website"
             :target="props.experiences.website == '' ? '_self' : '_blank'">
-            <div class="image_company"
+            <div class="bg-contain bg-no-repeat bg-center h-12.5"
               :style="imageCompany(props.experiences.image)"
             />
           </a>
 
-          <hr class="balise-hr"/>
+          <hr class="my-4	opacity-25"/>
 
-          <div class="period-timeline flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center">
             <span>{{ formatDateFR(props.experiences.month_end, props.experiences.year_end) }}</span>
 
             <SvgConfig :name="'arrow-top'" class="w-8 h-8 mb-1 mt-1" />
@@ -43,7 +43,7 @@ import BorderContent from '@/component/borderContent.vue';
             <span>{{ formatDateFR(props.experiences.month_start, props.experiences.year_start) }}</span>
           </div>
 
-          <hr class="balise-hr"/>
+          <hr class="my-4	opacity-25"/>
 
           <p class="flex items-center justify-center">
             ( {{ calculateDuration(props.experiences.month_start, props.experiences.year_start, props.experiences.month_end, props.experiences.year_end) }} )
@@ -51,7 +51,7 @@ import BorderContent from '@/component/borderContent.vue';
         </div>
       </div>
 
-      <div class="card view-content"
+      <div class="p-4 md:basis-3/4"
         data-aos="zoom-in"
         data-aos-offset="80"
       >
@@ -66,11 +66,11 @@ import BorderContent from '@/component/borderContent.vue';
             {{ props.experiences.company }}
           </h3>
         </div>
-        <hr class="balise-hr"/>
+        <hr class="my-4	opacity-25"/>
         <p
           v-for="detail, id in props.experiences.details"
           :key="id"
-          class="paragraph"
+          class="mb-4"
           v-html="detail"
          />
       </div>
@@ -79,29 +79,4 @@ import BorderContent from '@/component/borderContent.vue';
 </template>
 
 <style scoped>
-.color-content {
-  background-color: #095797;
-  border-radius: 0.5rem 0.5rem 0 0;
-}
-
-.view-content {
-  margin: 1rem 1rem;
-}
-
-.image_company {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 50px;
-}
-
-.balise-hr {
-  color: inherit;
-  margin: 1rem 0;
-  opacity: .25;
-}
-
-.paragraph {
-  margin-bottom: 1rem;
-}
 </style>
