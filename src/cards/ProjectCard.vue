@@ -24,12 +24,6 @@ import ModalProject from '@/component/modalProject.vue';
       :image="value.image"
     >
       <ModalProject :project="value" />
-      <!-- <div class="card card-md w-full">
-        <div class="card-body">
-          <h2>{{ value.title }}</h2>
-          <p>{{ value.description }}</p>
-        </div>
-      </div> -->
     </BorderMultiContent>
   </div>
 </template>
