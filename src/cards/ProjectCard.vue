@@ -18,13 +18,15 @@ import ModalProject from '@/component/modalProject.vue';
       <p>{{ props.sectionTitles.text }}</p>
     </div>
 
-    <BorderMultiContent 
-      v-for="(value, id) in props.projects" 
-      :key="`projectId_${id}`" 
-      :image="value.image"
-    >
-      <ModalProject :project="value" />
-    </BorderMultiContent>
+    <div class="md:flex md:flex-row md:flex-wrap md:justify-center">
+      <BorderMultiContent 
+        v-for="(value, id) in props.projects" 
+        :key="`projectId_${id}`" 
+        :image="value.image"
+      >
+        <ModalProject :project="value" />
+      </BorderMultiContent>
+    </div>
   </div>
 </template>
 
