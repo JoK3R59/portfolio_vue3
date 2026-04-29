@@ -28,7 +28,7 @@ import { personalData } from '@/assets/data/personalData';
     :jobTitle="personalData.profil.jobTitle"
     :subTitle="personalData.profil.subTitle"
     :socialLinks="personalData.socialLinks" />
-  <div id="portfolio_content" class="p-8 xl:px-56 lg:px-16 lg:py-16">
+  <div id="portfolio_content" class="p-8 2xl:px-64 lg:px-16 lg:py-16">
     <AboutCard 
       :profil="personalData.profil"
       :aboutMe="personalData.aboutMe" />
