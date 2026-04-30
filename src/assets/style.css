@@ -11,6 +11,10 @@ body,button,input,optgroup,select,textarea {
   background-color: #0A0F1F;
 }
 
+.shadow_content {
+  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.2);
+}
+
 .section {
   padding-block-end: 0;
   padding-block-start: 20px;
