@@ -42,7 +42,7 @@ import CarouselTools from '@/component/carouselTools.vue';
                     :alt="`SVG - ${ value.name }`"/>
 
                   <a target="_blank" :href="value.link"
-                    class="text-base font-bold hover:underline uppercase">
+                    class="text-base font-bold uppercase cursor-pointer">
                     {{ value.name }}
                   </a>
                 </div>
