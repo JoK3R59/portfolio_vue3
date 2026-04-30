@@ -21,6 +21,8 @@ body,button,input,optgroup,select,textarea {
 }
 .title_section {
   margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 @media (min-width: 768px) {
