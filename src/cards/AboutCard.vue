@@ -22,7 +22,7 @@ import type { PersonalData, InfoItems } from "@/utils/types";
 </script>
 
 <template>
-  <div class="">
+  <div class="text-slate-200">
     <BorderContent :class-style="'flex flex-col lg:flex-row'">
       
       <div class="card-body lg:basis-1/2">
@@ -51,10 +51,10 @@ import type { PersonalData, InfoItems } from "@/utils/types";
         <hr />
         <div v-for="(info, index) in informations" :key="index" class="py-2">
           <div class="flex flex-col lg:flex-row">
-            <p class="text-base text-white uppercase font-bold lg:max-w-1/3">
+            <p class="text-base uppercase font-bold lg:max-w-1/3">
               {{ info.label }} :
             </p>
-            <p class="text-base text-gray-200" lg:shrink>
+            <p class="text-base" lg:shrink>
               {{ info.value }}
             </p>
           </div>

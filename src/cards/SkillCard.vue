@@ -17,7 +17,7 @@ import CarouselTools from '@/component/carouselTools.vue';
 </script>
 
 <template>
-  <div class="section" id="skills">
+  <div class="section text-slate-200" id="skills">
     <div class="title_section flex flex-row items-center justify-center">
       <SvgConfig :name="props.sectionTitles.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
 
