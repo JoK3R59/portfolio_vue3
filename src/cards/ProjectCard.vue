@@ -18,7 +18,7 @@ import ModalProject from '@/component/modalProject.vue';
       <p>{{ props.sectionTitles.text }}</p>
     </div>
 
-    <div class="md:flex md:flex-row md:flex-wrap md:justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 gap-y-8 md:gap-y-4">
       <BorderMultiContent 
         v-for="(value, id) in props.projects" 
         :key="`projectId_${id}`" 
