@@ -14,6 +14,7 @@
     <div class="title_section flex flex-row items-center justify-center">
       <SvgConfig :name="props.sectionTitles.icon ?? '' " 
         class="w-10 md:w-14 h-10 md:h-14 mb-1 mr-1"
+        :color="`#F05033`"
       />
       <h1>{{ props.sectionTitles.text }}</h1>
     </div>
