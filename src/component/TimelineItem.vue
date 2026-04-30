@@ -18,8 +18,8 @@ import BorderContent from '@/component/borderContent.vue';
 </script>
 
 <template>
-  <BorderContent>
-    <div class="w-full md:flex md:flex-row">
+  <BorderContent :class-style="`mb-8`">
+    <div class="w-full md:flex md:flex-row ">
       <div class="bg-[#095797] rounded-t-lg md:rounded-none md:rounded-l-lg md:basis-1/4"
         data-aos="fade-right"
         data-aos-offset="80"
