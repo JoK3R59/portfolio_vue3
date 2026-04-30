@@ -27,7 +27,6 @@ body,button,input,optgroup,select,textarea {
 
 @media (min-width: 768px) {
   .section {
-    padding-block-end: 0;
     padding-block-start: 30px;
   }
   .title_section {
@@ -37,7 +36,6 @@ body,button,input,optgroup,select,textarea {
 }
 @media (min-width: 1024px) {
   .section {
-    padding-block-end: 0;
     padding-block-start: 70px;
   }
   .title_section {
@@ -46,12 +44,7 @@ body,button,input,optgroup,select,textarea {
   }
 }
 @media (min-width: 1440px) {
-  .section {
-    padding-block-end: 0;
-    padding-block-start: 70px;
-  }
   .title_section {
-    margin-bottom: 2rem;
     font-size: 26px;
   }
 }
