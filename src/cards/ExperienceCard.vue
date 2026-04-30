@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import type { PersonalData } from '@/utils/types';
-  import SvgConfig from '@/component/svgConfig.vue';
-  import TimelineItem from '@/component/TimelineItem.vue';
+import type { PersonalData } from '@/utils/types';
+import SvgConfig from '@/component/svgConfig.vue';
+import TimelineItem from '@/component/TimelineItem.vue';
 
   const props = defineProps<{
     sectionTitles: PersonalData["sectionTitles"][number];
@@ -11,7 +11,7 @@
 </script>
 
 <template>
-  <div class="experience_section" id="jobpro">
+  <div class="section" id="jobpro">
     <div class="title_section flex flex-row items-center justify-center">
       <SvgConfig :name="props.sectionTitles.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
       <h1>{{ props.sectionTitles.text }}</h1>
@@ -21,7 +21,7 @@
       v-for="(value, id) in props.experiences" 
       :key="id"
       :experiences="value"
-      :activeSchool="false"
+      :active-school="false"
     />
   </div>
 </template>

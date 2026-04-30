@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import { computed } from 'vue';
-  import BorderContent from '@/component/borderContent.vue';
-  import SvgConfig from '@/component/svgConfig.vue';
-  import { calculateAge } from '@/utils';
-  import type { PersonalData, InfoItems } from "@/utils/types";
+import { computed } from 'vue';
+import BorderContent from '@/component/borderContent.vue';
+import SvgConfig from '@/component/svgConfig.vue';
+import { calculateAge } from '@/utils';
+import type { PersonalData, InfoItems } from "@/utils/types";
 
   const props = defineProps<{
     profil: PersonalData["profil"]
@@ -22,11 +22,11 @@
 </script>
 
 <template>
-  <div class="about-section">
-    <BorderContent>
-      <!-- About Me Section -->
-      <div class="card-body card-left">
-        <div class="flex flex-auto items-center">
+  <div class="">
+    <BorderContent :class-style="'flex flex-col lg:flex-row'">
+      
+      <div class="card-body lg:basis-1/2">
+        <div class="flex items-center">
           <SvgConfig name="user" class="w-10 h-10 mr-2" />
           <h2 class="font-extrabold text-lg">
             Qui suis-je ?
@@ -34,28 +34,27 @@
         </div>
         <hr />
         <div v-for="(value, index) in props.aboutMe" :key="index"
-          class="card-content"
+          class="py-2"
         >
-          <p class="text-base content-about"
+          <p class="text-base"
             v-html="value" />
         </div>
       </div>
 
-      <!-- Personal Information Section -->
-      <div class="card-body card-right">
-        <div class="flex flex-auto items-center">
+      <div class="card-body lg:basis-1/2">
+        <div class="flex items-center">
           <SvgConfig name="user-id" class="w-10 h-10 mr-2" />
           <h2 class="font-extrabold text-lg">
             Informations personnelles
           </h2>
         </div>
         <hr />
-        <div v-for="(info, index) in informations" :key="index">
-          <div class="flex flex-col my-1">
-            <p class="text-base text-white uppercase font-bold">
+        <div v-for="(info, index) in informations" :key="index" class="py-2">
+          <div class="flex flex-col lg:flex-row">
+            <p class="text-base text-white uppercase font-bold lg:max-w-1/3">
               {{ info.label }} :
             </p>
-            <p class="text-base text-gray-200">
+            <p class="text-base text-gray-200" lg:shrink>
               {{ info.value }}
             </p>
           </div>
@@ -66,13 +65,4 @@
 </template>
 
 <style scoped>
-  .card-left {
-    padding: 1rem;
-  }
-  .card-right {
-    padding: 1rem;
-  }
-  .content-about {
-    margin-top: 1rem;
-  }
 </style>

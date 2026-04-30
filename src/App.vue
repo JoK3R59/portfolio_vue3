@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AOS from 'aos';
+import { onMounted } from 'vue';
 // Import Cards
 import ProfilCard from '@/cards/ProfilCard.vue';
 import AboutCard from '@/cards/AboutCard.vue';
@@ -8,8 +10,6 @@ import ExperienceCard from '@/cards/ExperienceCard.vue';
 import EducationCard from '@/cards/EducationCard.vue';
 import Footer from '@/cards/FooterCard.vue';
 import NavBar from '@/cards/NavBar.vue';
-import AOS from 'aos';
-import { onMounted } from 'vue';
 // Import Data
 import { personalData } from '@/assets/data/personalData';
 
@@ -20,44 +20,33 @@ import { personalData } from '@/assets/data/personalData';
 
 <template>
   <NavBar 
-    :sectionTitles = "personalData.sectionTitles"
-    :scrollTitles = "personalData.scrollTitles" />
+    :section-titles = "personalData.sectionTitles"
+    :scroll-titles = "personalData.scrollTitles"
+    :name = "personalData.profil.name" />
   <ProfilCard
     :name="personalData.profil.name"
-    :jobTitle="personalData.profil.jobTitle"
-    :subTitle="personalData.profil.subTitle"
-    :socialLinks="personalData.socialLinks" />
-  <div id="portfolio_content">
+    :job-title="personalData.profil.jobTitle"
+    :sub-title="personalData.profil.subTitle"
+    :social-links="personalData.socialLinks" />
+  <div id="portfolio_content" class="p-8 2xl:px-64 lg:px-16 lg:py-16">
     <AboutCard 
       :profil="personalData.profil"
-      :aboutMe="personalData.aboutMe" />
+      :about-me="personalData.aboutMe" />
     <SkillCard 
       :skills="personalData.skills"
       :tools="personalData.tools"
-      :sectionTitles="personalData.sectionTitles[1]!" />
+      :section-titles="personalData.sectionTitles[1]!" />
     <ProjectCard 
       :projects="personalData.projects"
-      :sectionTitles="personalData.sectionTitles[2]!" />
+      :section-titles="personalData.sectionTitles[2]!" />
     <ExperienceCard 
-      :sectionTitles="personalData.sectionTitles[3]!"
+      :section-titles="personalData.sectionTitles[3]!"
       :experiences="personalData.experiences" />
     <EducationCard 
-      :sectionTitles="personalData.sectionTitles[4]!"
+      :section-titles="personalData.sectionTitles[4]!"
       :educations="personalData.educations" />
   </div>
   <Footer 
     :linkedin="personalData.socialLinks.linkedin"
     :github="personalData.socialLinks.github" />
 </template>
-
-<style>
-  #portfolio_content {
-    padding: 2rem 2rem;
-  }
-  @media (min-width: 1200px) {
-    /* PC standard */
-    #portfolio_content {
-      padding: 2rem 4rem;
-    }
-  }
-</style>

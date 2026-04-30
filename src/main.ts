@@ -1,4 +1,3 @@
-// import './assets/reset.css'
 import './assets/style.css'
 import 'aos/dist/aos.css'
 import { createApp } from 'vue'

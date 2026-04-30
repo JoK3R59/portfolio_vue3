@@ -5,6 +5,7 @@ import SvgConfig from '@/component/svgConfig.vue';
 
   const props = defineProps<{
     tools: PersonalData["tools"];
+    classStyle: string;
   }>();
 
   // Carousel pour les outils
@@ -63,13 +64,8 @@ import SvgConfig from '@/component/svgConfig.vue';
 </script>
 
 <template>
-  <div class="card card-md">
-    <div class="card-body flex flex-col items-center pb-2">
-      <h2 class="text-xl font-bold">Mes outils</h2>
-      <p class="text-xs italic text-center">(Naviguez avec les flèches pour plus de détails)</p>
-    </div>
+  <div :class="props.classStyle">
 
-    <!-- Slide actif -->
     <div class="flex flex-col items-center gap-3 min-h-48">
       <SvgConfig :name="currentTool.svg" class="w-14 h-14" />
       <p class="text-sm text-center leading-relaxed max-w-xs">
@@ -77,7 +73,6 @@ import SvgConfig from '@/component/svgConfig.vue';
       </p>
     </div>
 
-    <!-- Navigation : flèches + dots sur la même ligne -->
     <div class="flex justify-center items-center gap-3">
       <button @click="prev" class="btn btn-circle btn-sm opacity-70 hover:opacity-100">
         ❮

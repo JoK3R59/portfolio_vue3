@@ -34,7 +34,7 @@ import type { Project } from '@/utils/types';
   </button>
 
   <Teleport to="body"> 
-    <dialog ref="dialog" class="modal">
+    <dialog ref="dialog" class="modal max-w-max">
       <div class="modal-box w-11/12 max-w-5xl">
         <img :src="getImage()" alt="Image du projet"
           class="w-full h-auto object-contain rounded-lg mb-4" 

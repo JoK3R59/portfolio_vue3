@@ -1,38 +1,43 @@
 <script setup lang="ts">
 import type { PersonalData } from '@/utils/types';
 import SvgConfig from '@/component/svgConfig.vue';
+import { ref } from 'vue';
 
   const props = defineProps<{
     sectionTitles: PersonalData['sectionTitles'];
     scrollTitles: PersonalData['scrollTitles'];
+    name: PersonalData['profil']['name'];
   }>();
+
+  const activeId = ref<number | null>(null);
+
+  function onLinkClick(id: number) {
+    activeId.value = id;
+    setTimeout(() => { activeId.value = null; }, 150);
+  }
 </script>
 
 <template>
-  <div class="navbar_section navbar">
-    <div class="menu menu-horizontal w-full justify-around navbar-center"
+  <div 
+    class="navbar fixed h-20 lg:h-14 xl:h-10 bottom-0 lg:bottom-auto lg:top-0 left-0 z-900 shadow-[0_2px_5px_rgba(0,0,0,0.1)] bg-[#0b1120] lg:shadow-[0_-3px_20px_rgba(156,156,156,0.5)]"
+  >
+    <div 
+      class="flex flex-row w-full max-w-screen justify-around lg:justify-between items-center xl:px-8 2xl:px-64"
     >
+      <span class="hidden lg:block font-bold text-lg uppercase text-gray-50 tracking-wide">
+        {{ props.name }}
+      </span>
+
       <a v-for="(value, id) in props.sectionTitles" :key="id"
         :href="id == 0 ? '#' : '#' + props.scrollTitles[id]"
-        class="flex flex-col items-center min-w-1/6"
+        :class="activeId === id ? 'text-blue-400' : 'text-gray-50'"
+        class="flex flex-col lg:flex-row items-center lg:max-h-10 min-w-1/6 lg:min-w-36 xl:min-w-0 no-underline rounded-lg font-medium lg:font-normal lg:uppercase transition-all duration-[250ms] hover:text-blue-400 xl:py-4 lg:px-4 xl:px-4 lg:hover:bg-white/10"
+        @click="onLinkClick(id)"
       >
-        <SvgConfig :name="value.icon" class="w-7 h-7 mb-1" />
-        {{ value.text_mobile }}
+        <SvgConfig :name="value.icon" class="w-6 h-6 mb-1 lg:mb-0 lg:mr-2 lg:hidden" />
+        <span class="lg:hidden">{{ value.text_mobile }}</span>
+        <span class="hidden lg:inline">{{ value.text }}</span>
       </a>
     </div>
   </div>
 </template>
-
-<style scoped>
-  .navbar_section {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* TEST */
-    background-color: #0B1120;
-  }
-  
-  /* DESKTOP */
-</style>
