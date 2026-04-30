@@ -22,7 +22,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
-  <section class="profil-section hero">
+  <section class="profil-section hero text-slate-200">
     <div class="hero-overlay"></div>
     <div class="w-screen lg:w-dvh h-100 text-center">
       <div class="px-6">
