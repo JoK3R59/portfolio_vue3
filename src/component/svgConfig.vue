@@ -5,9 +5,11 @@ import { computed } from 'vue';
     defineProps<{ 
       name: string;
       class?: string;
+      color?: string;
     }>(), {
       name: '',
-      class: ''
+      class: '',
+      color: '#eee'
     }
   )
 
@@ -28,6 +30,7 @@ import { computed } from 'vue';
     v-if="IconComp"
     :is="IconComp"
     :class="computedClass"
+    :style="{ color: props.color }"
   />
 </template>
 

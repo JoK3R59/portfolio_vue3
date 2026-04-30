@@ -252,11 +252,11 @@ export const personalData: PersonalData = {
       year_end: "2025",
       details: [
         "Accompagnement d’un client dans le secteur de la restauration dans la création de son site vitrine, avec l’objectif de proposer une présence en ligne moderne et adaptée aux usages mobiles.",
-        "J’ai commencé par échanger avec le client afin de bien comprendre ses besoins : mise en avant des menus, galerie photos, formulaire de contact et gestion des réservations. Cela m’a permis de proposer une solution efficace, adaptée à son activité.",
-        "Choix et mise en place de WordPress comme CMS, avec intégration d’un outil de réservation externe (TheFork) afin de simplifier la gestion des réservations en ligne.",
-        "Conception du site avec Elementor, en travaillant sur le design des pages, l’ergonomie mobile et l’intégration du système de réservation.",
-        "Configuration des notifications automatiques et la synchronisation avec Google Agenda pour permettre un suivi clair et centralisé des réservations.",
-        "J’ai assuré un accompagnement technique et formé le client aux bonnes pratiques de gestion de contenu, afin qu’il puisse être autonome dans l’utilisation de son site."
+        "J’ai commencé par <span style='font-weight:bold;'>échanger avec le client</span> afin de bien comprendre ses besoins : mise en avant des menus, galerie photos, formulaire de contact et gestion des réservations. Cela m’a permis de proposer une solution efficace, <span style='font-weight:bold;'>adaptée à son activité.</span>",
+        "Choix et mise en place de <span style='font-weight:bold;'>WordPress</span> comme CMS, avec intégration d’un outil de réservation externe <span style='font-weight:bold;'>(TheFork)</span> afin de simplifier la gestion des réservations en ligne.",
+        "Conception du site avec <span style='font-weight:bold;'>Elementor</span>, en travaillant sur le design des pages, l’ergonomie mobile et l’intégration du système de réservation.",
+        "Configuration des notifications automatiques et la synchronisation avec <span style='font-weight:bold;'>Google Agenda</span> pour permettre un suivi clair et centralisé des réservations.",
+        "J’ai assuré <span style='font-weight:bold;'>un accompagnement technique</span> et <span style='font-weight:bold;'>formé le client</span> aux bonnes pratiques de gestion de contenu, afin qu’il puisse être autonome dans l’utilisation de son site."
       ]
     },
     {
@@ -269,12 +269,12 @@ export const personalData: PersonalData = {
       month_end: "05",
       year_end: "2024",
        details: [
-        "À la suite de ma formation de développeur web et mobile chez O’clock, j’ai rejoint Acteam-IT pour ma première expérience professionnelle, où j’ai pu concrétiser mes acquis en intervenant sur des projets destinés à des clients grands comptes, dans des contextes techniques exigeants.",
+        "À la suite de ma formation de développeur web et mobile chez O’clock, j’ai rejoint Acteam-IT pour ma première expérience professionnelle, où j’ai pu concrétiser mes acquis en intervenant sur des projets destinés à <span style='font-weight:bold;'>des clients grands comptes</span>, dans <span style='font-weight:bold;'>des contextes techniques exigeants</span>.",
         "Au sein de l’entreprise, j’interviens aussi bien sur des applications web que mobiles, en assurant leur maintenance, leur évolution et leur bon fonctionnement en production. Mon rôle consiste à diagnostiquer et corriger les anomalies, optimiser les performances et intégrer de nouvelles fonctionnalités en réponse aux besoins métiers.",
         "Au fil de mes missions, j’ai développé une approche orientée qualité et fiabilité, avec une attention particulière portée à la robustesse du code, à la performance des applications et à la maintenabilité des projets dans le temps.",
-        "Suite à une spécialisation en Kotlin, j’ai évolué vers un rôle de référent Android. J’accompagne les équipes sur les problématiques mobiles, encadre un alternant et prends en charge des projets de bout en bout, de la conception jusqu’à la mise en production.",
-        "J’ai notamment participé à un projet de gestion d’interventions terrain pour un acteur majeur du secteur de l’énergie. Ce projet m’a amené à travailler sur des problématiques concrètes telles que la mise à niveau d’une application Android, l’intégration de fonctionnalités liées aux objets connectés (RFID), la capture et le traitement d’images, ainsi que l’optimisation des performances sur des terminaux mobiles.",
-        "Enfin, je veille à produire une documentation technique claire et à jour afin de faciliter la maintenance, le partage de connaissances et la pérennité des applications."
+        "Suite à une spécialisation en <span style='font-weight:bold;'>Kotlin</span>, j’ai évolué vers un rôle de <span style='font-weight:bold;'>référent Android</span>. J’accompagne les équipes sur les problématiques mobiles, <span style='font-weight:bold;'>encadre un alternant</span> et prends en charge des projets de bout en bout, de la conception jusqu’à la mise en production.",
+        "J’ai notamment participé à un projet de gestion <span style='font-weight:bold;'>d’interventions terrain</span> pour un acteur majeur du secteur de l’énergie. Ce projet m’a amené à travailler sur des problématiques concrètes telles que la mise à niveau d’une application <span style='font-weight:bold;'>Android</span>, l’intégration de fonctionnalités liées aux objets connectés <span style='font-weight:bold;'>(RFID)</span>, la capture et le traitement d’images, ainsi que l’optimisation des performances sur des terminaux mobiles.",
+        "Enfin, je veille à produire une <span style='font-weight:bold;'>documentation technique claire et à jour</span> afin de faciliter la maintenance, le partage de connaissances et la pérennité des applications."
       ]
     },
     {
@@ -288,11 +288,11 @@ export const personalData: PersonalData = {
       year_end: "2022",
       details: [
         "Accompagnement d’un particulier dans la création de son activité de transport de produits volumineux, en développant une solution pour mettre en relation des clients et des transporteurs.",
-        "J’ai commencé par échanger avec le client pour bien comprendre ses besoins et définir les fonctionnalités essentielles. Cela m’a permis de rédiger un cahier des charges clair et de poser les bases d’un MVP, afin de livrer rapidement une première version utilisable.",
-        "J’ai ensuite développé une application mobile cross-platform avec React Native, permettant de gérer les demandes de livraison et la mise en relation entre les utilisateurs et les livreurs. J’ai intégré des fonctionnalités de géolocalisation pour faciliter la recherche de transporteurs à proximité, ainsi que des notifications pour informer les utilisateurs de l’état de leurs demandes.",
+        "J’ai commencé par <span style='font-weight:bold;'>échanger avec le client pour bien comprendre ses besoins</span> et définir les fonctionnalités essentielles. Cela m’a permis de rédiger <span style='font-weight:bold;'>un cahier des charges clair</span> et de poser les bases d’un <span style='font-weight:bold;'>MVP</span>, afin de livrer rapidement une première version utilisable.",
+        "J’ai ensuite développé une application mobile cross-platform avec <span style='font-weight:bold;'>React Native</span>, permettant de gérer les demandes de livraison et la mise en relation entre les utilisateurs et les livreurs. J’ai intégré des fonctionnalités de <span style='font-weight:bold;'>géolocalisation</span> pour faciliter la recherche de transporteurs à proximité, ainsi que <span style='font-weight:bold;'>des notifications</span> pour informer les utilisateurs de l’état de leurs demandes.",
         "Rôle de développeur principal sur le projet, avec un développeur junior que j’ai accompagné sur les aspects techniques et l’avancement des tâches.",
-        "Mise en place d’une API REST avec Node.js pour gérer les utilisateurs et les livreurs, les commandes et le suivi des livraisons. ainsi que la conception d’une base de données MongoDB pour organiser et stocker les informations liées à l’application.",
-        "Réalisation des tests, correction des bugs et livraison d’une application fonctionnelle, en accord avec les attentes du client."
+        "Mise en place d’une API REST avec <span style='font-weight:bold;'>Node.js</span> pour gérer les utilisateurs et les livreurs, les commandes et le suivi des livraisons. ainsi que la conception d’une base de données <span style='font-weight:bold;'>MongoDB</span> pour organiser et stocker les informations liées à l’application.",
+        "Réalisation <span style='font-weight:bold;'>des tests</span>, correction des bugs et livraison d’une application fonctionnelle, <span style='font-weight:bold;'>en accord avec les attentes du client.</span>"
       ]
     }
   ],
@@ -301,16 +301,16 @@ export const personalData: PersonalData = {
       title: "Concepteur Developpeur d'Application",
       company: "ALT, Incubateur Tech, niveau 6 (Bac+3/4), Rennes",
       image: "alt",
-      website: "",
+      website: "http://www.alt.bzh/",
       month_start: "07",
       year_start: "2024",
       month_end: "01",
       year_end: "2025",
       details: [
-        "Formation intensive de 6 mois axés sur la conception et le développement d’applications, avec une approche pratique et orientée projet.",
-        "Utilisation des technologies React (Front‐End) avec tailwindCSS, NestJS et Prisma ORM (Back‐End) avec base de données SQL.",
-        "Introduction aux principes fondamentaux du DevOps via Docker, AWS, et GitLab CI/CD.",
-        "Mise en œuvre de tests automatisés avec Cypress (E2E) et Jest (tests unitaires).",
+        "Formation intensive de 6 mois axés sur <span style='font-weight:bold;'>la conception et le développement d’applications</span>, avec une approche pratique et orientée projet.",
+        "Utilisation des technologies <span style='font-weight:bold;'>React</span> (Front‐End) avec <span style='font-weight:bold;'>tailwindCSS</span>, <span style='font-weight:bold;'>NestJS</span> et <span style='font-weight:bold;'>Prisma ORM</span> (Back‐End) avec base de données SQL.",
+        "Introduction aux principes fondamentaux du DevOps via <span style='font-weight:bold;'>Docker</span>, <span style='font-weight:bold;'>AWS</span>, et <span style='font-weight:bold;'>GitLab CI/CD</span>.",
+        "Mise en œuvre de tests automatisés avec <span style='font-weight:bold;'>Cypress (E2E)</span> et <span style='font-weight:bold;'>Jest (tests unitaires)</span>.",
         "Réalisation d’un projet de développement d’une application web complète, intégrant une API REST et une interface utilisateur réactive, avec une attention particulière portée à la qualité du code, à la performance et à la maintenabilité.",
       ]
     },
@@ -318,15 +318,15 @@ export const personalData: PersonalData = {
       title: "Développeur Web et Web mobile",
       company: "O'clock, Ecole Tech, Niveau 5 (Bac+2), Téléprésentiel",
       image: "oclock",
-      website: "",
-      month_start: "07",
-      year_start: "2024",
-      month_end: "01",
-      year_end: "2025",
+      website: "http://www.oclock.io/",
+      month_start: "06",
+      year_start: "2019",
+      month_end: "11",
+      year_end: "2019",
       details: [
-        "Reconversion professionnelle vers le développement web et mobile, avec une formation intensive de 6 mois en téléprésentiel.",
-        "Apprentissage des fondamentaux du développement web, incluant HTML, CSS, JavaScript, ainsi que le framework React.js pour le front-end, et Node.js pour le back-end.",
-        "Formation axée sur les bonnes pratiques de développement, la gestion de projet agile et la collaboration en équipe, avec des outils tels que Git et GitHub pour le versioning du code.",
+        "Reconversion professionnelle vers le <span style='font-weight:bold;'>développement web et mobile</span>, avec une formation intensive de 6 mois en téléprésentiel.",
+        "Apprentissage des fondamentaux du développement web, incluant <span style='font-weight:bold;'>HTML</span>, <span style='font-weight:bold;'>CSS</span>, <span style='font-weight:bold;'>JavaScript</span>, ainsi que le framework <span style='font-weight:bold;'>React.js</span> pour le front-end, et <span style='font-weight:bold;'>Node.js</span> pour le back-end.",
+        "Formation axée sur les bonnes pratiques de développement, la gestion de projet <span style='font-weight:bold;'>agile</span> et la collaboration en équipe, avec des outils tels que <span style='font-weight:bold;'>Git</span> et <span style='font-weight:bold;'>GitHub</span> pour le versioning du code.",
         "Mise en pratique à travers un projet de développement d’une application web complète, intégrant une API REST et une interface utilisateur réactive.",
       ]
     }

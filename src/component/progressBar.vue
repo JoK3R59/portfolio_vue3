@@ -15,7 +15,7 @@
     :value="props.value"
     max="100"
     data-aos="flip-down"
-    data-aos-duration="1000"
+    data-aos-duration="3000"
     data-aos-offset="50"
   ></progress>
 </template>
