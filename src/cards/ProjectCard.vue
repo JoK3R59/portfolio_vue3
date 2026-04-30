@@ -13,7 +13,7 @@ import ModalProject from '@/component/modalProject.vue';
 
 <template>
   <div class="section" id="projects">
-    <div class="title_section flex flex-row items-center justify-center mb-8">
+    <div class="title_section flex flex-row items-center justify-center">
       <SvgConfig :name="props.sectionTitles.icon ?? '' " class="w-12 h-12 mb-1 mr-1" />
       <p>{{ props.sectionTitles.text }}</p>
     </div>
