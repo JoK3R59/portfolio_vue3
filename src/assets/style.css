@@ -7,6 +7,10 @@ body,button,input,optgroup,select,textarea {
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
 }
 
+#app {
+  background-color: #0A0F1F;
+}
+
 .section {
   padding-block-end: 0;
   padding-block-start: 20px;
@@ -42,14 +46,3 @@ body,button,input,optgroup,select,textarea {
     margin-bottom: 2rem;
   }
 }
-
-
-/* SVG STYLE */
-.svg_title {
-  color: #60A5FA;
-}
-
-/* BACKGROUND-COLOR DEV */
-  #app {
-    background-color: #0A0F1F;
-  }
