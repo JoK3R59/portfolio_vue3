@@ -20,30 +20,30 @@ import { personalData } from '@/assets/data/personalData';
 
 <template>
   <NavBar 
-    :sectionTitles = "personalData.sectionTitles"
-    :scrollTitles = "personalData.scrollTitles"
+    :section-titles = "personalData.sectionTitles"
+    :scroll-titles = "personalData.scrollTitles"
     :name = "personalData.profil.name" />
   <ProfilCard
     :name="personalData.profil.name"
-    :jobTitle="personalData.profil.jobTitle"
-    :subTitle="personalData.profil.subTitle"
-    :socialLinks="personalData.socialLinks" />
+    :job-title="personalData.profil.jobTitle"
+    :sub-title="personalData.profil.subTitle"
+    :social-links="personalData.socialLinks" />
   <div id="portfolio_content" class="p-8 2xl:px-64 lg:px-16 lg:py-16">
     <AboutCard 
       :profil="personalData.profil"
-      :aboutMe="personalData.aboutMe" />
+      :about-me="personalData.aboutMe" />
     <SkillCard 
       :skills="personalData.skills"
       :tools="personalData.tools"
-      :sectionTitles="personalData.sectionTitles[1]!" />
+      :section-titles="personalData.sectionTitles[1]!" />
     <ProjectCard 
       :projects="personalData.projects"
-      :sectionTitles="personalData.sectionTitles[2]!" />
+      :section-titles="personalData.sectionTitles[2]!" />
     <ExperienceCard 
-      :sectionTitles="personalData.sectionTitles[3]!"
+      :section-titles="personalData.sectionTitles[3]!"
       :experiences="personalData.experiences" />
     <EducationCard 
-      :sectionTitles="personalData.sectionTitles[4]!"
+      :section-titles="personalData.sectionTitles[4]!"
       :educations="personalData.educations" />
   </div>
   <Footer 

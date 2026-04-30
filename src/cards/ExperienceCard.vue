@@ -21,7 +21,7 @@ import TimelineItem from '@/component/TimelineItem.vue';
       v-for="(value, id) in props.experiences" 
       :key="id"
       :experiences="value"
-      :activeSchool="false"
+      :active-school="false"
     />
   </div>
 </template>

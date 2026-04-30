@@ -23,7 +23,7 @@ import type { PersonalData, InfoItems } from "@/utils/types";
 
 <template>
   <div class="">
-    <BorderContent :classStyle="'flex flex-col lg:flex-row'">
+    <BorderContent :class-style="'flex flex-col lg:flex-row'">
       
       <div class="card-body lg:basis-1/2">
         <div class="flex items-center">

@@ -59,7 +59,26 @@ import CarouselTools from '@/component/carouselTools.vue';
           </div>
           <hr/>
 
-          <CarouselTools :tools="props.tools" />
+          <div class="card card-md">
+            <div class="card-body flex flex-col items-center pb-2">
+              <h2 class="text-xl font-bold">Mes outils</h2>
+              <p class="text-xs italic text-center md:hidden">(Naviguez avec les flèches pour plus de détails)</p>
+
+              <p class="text-xs italic text-center hidden md:block">(Survolez ou cliquez sur les icônes pour plus de détails)</p>
+            </div>
+            <CarouselTools :tools="props.tools" class-style="md:hidden"/>
+
+            <div class="hidden md:flex flex-wrap gap-4 justify-center items-center pt-4">
+              <div
+                v-for="tool in props.tools"
+                :key="tool.svg"
+                class="tooltip lg:mx-2"
+                :data-tip="tool.desc"
+              >
+                <SvgConfig :name="tool.svg" class="md:w-10 lg:w-14 md:h-10 lg:h-14 cursor-pointer" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </BorderContent>
@@ -67,6 +86,24 @@ import CarouselTools from '@/component/carouselTools.vue';
 </template>
 
 <style scoped>
+  @media (min-width: 768px) {
+    .tooltip::before {
+      max-width: 14rem;
+      padding-block: 0.4rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .tooltip::before {
+      max-width: 18rem;
+      padding-block: 0.6rem;
+    }
+  }
+  @media (min-width: 1440px) {
+    .tooltip::before {
+      max-width: 22rem;
+      padding-block: 0.8rem;
+    }
+  }
   .card-body{
     padding: 1rem;
   }
