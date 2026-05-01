@@ -24,7 +24,7 @@ import { ref } from 'vue';
 <template>
   <section class="profil-section hero text-slate-200">
     <div class="hero-overlay"></div>
-    <div class="w-screen lg:w-dvh h-100 text-center">
+    <div class="w-full h-100 text-center">
       <div class="px-6">
         <div class="header-image pulse">
           <a href="https://www.linkedin.com/in/guillaume-ersent/" target="_blank">
