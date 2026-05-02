@@ -38,6 +38,7 @@ import ModalProject from '@/component/modalProject.vue';
           :href="value.link || undefined"
           :target="value.link ? '_blank' : undefined"
           :rel="value.link ? 'noopener noreferrer' : undefined"
+          data-aos="fade-up"
         >
           <figure class="cc-effect group relative overflow-hidden rounded-lg">
             <img
