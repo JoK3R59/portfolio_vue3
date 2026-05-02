@@ -27,8 +27,8 @@ import { ref } from 'vue';
     <div class="w-full h-100 text-center">
       <div class="px-6">
         <div class="header-image pulse">
-          <a href="https://www.linkedin.com/in/guillaume-ersent/" target="_blank">
-            <img src="@/assets/images/profil.jpg" alt="Photo de Profil" class="rounded-full" />
+          <a href="https://www.linkedin.com/in/guillaume-ersent" target="_blank">
+            <img src="@/assets/images/profil.webp" alt="Photo de Profil" class="rounded-full" />
           </a>
         </div>
 
