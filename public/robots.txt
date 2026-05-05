@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /cv/
+
+Sitemap: http://ersentguillaume.fr/sitemap.xml

@@ -44,6 +44,7 @@ import ModalProject from '@/component/modalProject.vue';
             <img
               :src="getImage(value.image)"
               :alt="value.title"
+              loading="lazy"
               class="block w-full h-100 object-cover transition-[filter] duration-[350ms] ease-out group-hover:blur-sm"
             />
             <figcaption class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-slate-900/80 px-6 text-center text-white opacity-0 transition-opacity duration-[350ms] ease-out group-hover:opacity-100">

@@ -37,6 +37,7 @@ import type { Project } from '@/utils/types';
     <dialog ref="dialog" class="modal max-w-max">
       <div class="modal-box bg-[#1d232a]! w-11/12 max-w-5xl">
         <img :src="getImage()" alt="Image du projet"
+          loading="lazy"
           class="w-full h-auto object-contain rounded-lg mb-4" 
         />
         <h2 class="text-lg font-bold mb-2">

@@ -29,7 +29,9 @@
     <button class="btn bg-[#0077B5] btn-circle mx-2 lg:w-12 lg:h-12"
       @click="openLink('linkedin')">
       <img :src="getSvgPath(props.linkedin.svg)"
-        alt="LinkedIn">
+        alt="LinkedIn"
+        loading="lazy"
+      />
     </button>
   </div>
 
@@ -37,7 +39,9 @@
     <button class="btn bg-[#ffffff] btn-circle mx-2 github lg:w-12 lg:h-12"
       @click="openLink('github')">
       <img :src="getSvgPath(props.github.svg)"
-        alt="GitHub">
+        alt="GitHub"
+        loading="lazy"
+      />
     </button>
   </div>
 </template>

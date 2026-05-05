@@ -39,7 +39,9 @@ import CarouselTools from '@/component/carouselTools.vue';
                 <div class="title_progress flex flex-row items-center w-full">
                   <img class="svg" 
                     :src="getSvgPath(value.svg)"
-                    :alt="`SVG - ${ value.name }`"/>
+                    :alt="`SVG - ${ value.name }`"
+                    loading="lazy"
+                  />
 
                   <a target="_blank" :href="value.link"
                     class="text-base font-bold uppercase cursor-pointer">
