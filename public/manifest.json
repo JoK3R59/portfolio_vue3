@@ -1,0 +1,17 @@
+{
+  "name": "Guillaume ERSENT - Développeur FullStack",
+  "short_name": "G. ERSENT",
+  "description": "Portfolio de Guillaume ERSENT, développeur FullStack Web & Mobile basé à Lille.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0F1F",
+  "theme_color": "#0077B5",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/180x180/guillaume.webp",
+      "sizes": "180x180",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -17,7 +17,7 @@ import TimelineItem from '@/component/TimelineItem.vue';
         class="w-10 md:w-14 h-10 md:h-14 mb-1 mr-1"
         :color="`#0b6ab8`" 
       />
-      <h1>{{ props.sectionTitles.text }}</h1>
+      <h2>{{ props.sectionTitles.text }}</h2>
     </div>
 
     <TimelineItem 

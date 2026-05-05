@@ -28,7 +28,7 @@ import { ref } from 'vue';
       <div class="px-6">
         <div class="header-image pulse">
           <a href="https://www.linkedin.com/in/guillaume-ersent" target="_blank">
-            <img src="@/assets/images/profil.webp" alt="Photo de Profil" class="rounded-full" />
+            <img src="@/assets/images/profil.webp" width="140" height="140" alt="Photo de Profil" class="rounded-full" />
           </a>
         </div>
 
@@ -37,7 +37,7 @@ import { ref } from 'vue';
         <p class="my-2 text-lg font-semibold uppercase">{{ props.jobTitle }}</p>
         <p class="mb-8 text-lg font-semibold uppercase">{{ props.subTitle }}</p>
         <div data-aos="zoom-in">
-          <a @click="onButtonClick()" href="/cv-guillaume-ersent.pdf" target="_blank"
+          <a @click="onButtonClick()" href="/cv/cv-guillaume-ersent.pdf" target="_blank"
             :class="{ 'scale-95 translate-y-1.5': isPressed }"
             class="inline-flex items-center justify-center px-6 py-2 rounded-lg cursor-pointer font-medium text-lg text-white bg-[#095797] hover:bg-[#0d80df] ring-[#0d80df] inset-ring ring-offset-1 ring-offset-[#eee] hover:ring-3 transition hover:delay-100 ease-in-out duration-[400ms] "
           >

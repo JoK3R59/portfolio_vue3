@@ -20,7 +20,7 @@
         :linkedin="props.linkedin"
         :github="props.github" />
     </div>
-    <h1>Guillaume ERSENT - 2026</h1>
+    <p>Guillaume ERSENT - 2026</p>
   </div>
 
 </template>
@@ -29,7 +29,7 @@
   .footer_section {
     height: 11rem;
   }
-  .footer_section h1 {
+  .footer_section p {
     color: #fff;
     text-align: center;
     margin: 1rem 0;
