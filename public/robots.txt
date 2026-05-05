@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /cv/
 
-Sitemap: http://ersentguillaume.fr/sitemap.xml
+Sitemap: https://ersentguillaume.fr/sitemap.xml
